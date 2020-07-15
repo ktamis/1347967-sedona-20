@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Тамара Курач](https://up.htmlacademy.ru/adaptive/20/user/1347967).
-* Наставник: `Ольга Вадясова`.
+* Наставник: [Ольга Вадясова] (https://htmlacademy.ru/profile/ad0v0).
 
 ---
 
