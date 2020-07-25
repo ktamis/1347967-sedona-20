@@ -1,5 +1,3 @@
-@import "variables";
-
 .page-body {
   margin: 0;
   padding: 0;
@@ -12,16 +10,6 @@
   background-position: center;
 }
 
-a {
-  text-decoration: none;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-.site-list__item a {
-  color: black;
-}
 .visually-hidden {
   display: $visible;
 }

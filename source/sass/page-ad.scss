@@ -1,4 +1,15 @@
 .page-ad {
+  display: flex;
+  min-height: 631px;
+  position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg"), url("../img/bg-intro-triangle-mobile.svg");
   background-color: $background;
-  }
+  background-size: 100%, contain;
+  background-repeat: no-repeat;
+  background-position: left -290px top 279 px;
+}
+.page-ad__welcome {
+  position: absolute;
+  left: 371px;
+  bottom: 295px;
+}

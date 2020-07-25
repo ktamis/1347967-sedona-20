@@ -1,12 +1,21 @@
 .mobile-nav {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  list-style: none;
   background-color:$background;
+  width: 320px;
+  min-height: 223px;
 }
 
-.site-list {
-  font-size: $secondary-font-size;
-  color: $secondary-text-color;
+.mobile-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+.site-list__item {
+  font-size: $secondary-font-size;
+  font-weight: bold;
+  color: $secondary-text-color;
+  text-decoration: none;
+}
+
