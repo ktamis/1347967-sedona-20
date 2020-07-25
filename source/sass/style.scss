@@ -1,17 +1,15 @@
 // Начните писать стили здесь
-@import url("../sass/form.scss");
-@import url("../sass/foto.scss");
-@import url("../sass/fotogallery.scss");
-@import url("../sass/mobile-nav.scss");
-@import url("../sass/page-ad.scss");
-@import url("../sass/page-body.scss");
-@import url("../sass/page-footer.scss");
-@import url("../sass/page-header.scss");
-@import url("../sass/page-main.scss");
-@import url("../sass/reason.scss");
-@import url("../sass/reason-services.scss");
-@import url("../sass/user-form.scss");
-@import url("../sass/ variables.scss");
-body {
-  background: red;
-}
+@import "variables";
+@import "page-body";
+@import "form";
+@import "foto";
+@import "fotogallery";
+@import "mobile-nav";
+@import "page-ad";
+@import "page-body";
+@import "page-footer";
+@import "page-header";
+@import "page-main";
+@import "reason";
+@import "reason-services";
+@import "user-form";

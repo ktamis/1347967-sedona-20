@@ -1,3 +1,12 @@
 .mobile-nav {
-  background-color: #81B3D2;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  list-style: none;
+  background-color:$background;
+}
+
+.site-list {
+  font-size: $secondary-font-size;
+  color: $secondary-text-color;
 }
