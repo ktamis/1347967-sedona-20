@@ -1,7 +1,32 @@
 .reason {
+  display: flex;
+  flex-direction: column;
   background-color: $background;
+  width: 320px;
 }
 
 .reason__picture {
   background-color: $background;
+}
+
+.reason__wrapper {
+   padding: 55px 12px;
+ }
+
+.reason__title {
+  text-align: center;
+  font-size: $secondary-font-size;
+  font-weight: bold;
+}
+
+.reason__number {
+  text-align: center;
+}
+
+.reason__wrapper p {
+  text-align: center;
+}
+
+.color-white {
+  color: $secondary-text-color;
 }

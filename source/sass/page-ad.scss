@@ -1,15 +1,51 @@
 .page-ad {
   display: flex;
-  min-height: 631px;
+  width: 320px;
+/*  min-height: 631px;*/
   position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg"), url("../img/bg-intro-triangle-mobile.svg");
   background-color: $background;
   background-size: 100%, contain;
   background-repeat: no-repeat;
-  background-position: left -290px top 279 px;
+
 }
 .page-ad__welcome {
   position: absolute;
-  left: 371px;
-  bottom: 295px;
+  top: 90px;
+  left: 19px;
+}
+
+.page-ad__wrapper {
+  width: 285px;
+  min-height: 162px;
+  position: absolute;
+  top: 477px;
+  left: 17px;
+  background-color: white;
+}
+
+.page-ad__slogan {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: $secondary-font-size;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+}
+.page-ad__wrapper p {
+  max-width: 285px;
+  margin: 0 auto;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.page-ad__wrap {
+  width: 229px;
+}
+.page-ad__name {
+  position: absolute;
+  top: 108px;
+  right: 46px;
 }

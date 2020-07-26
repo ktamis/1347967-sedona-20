@@ -1,3 +1,20 @@
-.reason-services--dark {
+.reason-services {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.reason--dark {
+  min-height: 503px;
   background-color: #EEEEEE;
+
+}
+
+.reason-services__title {
+  font-size: $secondary-font-size;
+  font-weight: bold;
+}
+
+.color-black {
+  color: $primary-text-color;
 }
