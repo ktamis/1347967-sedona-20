@@ -1,6 +1,21 @@
 .foto {
+  display: flex;
+  flex-direction: column;
   width: 320px;
 }
 .foto__wrapper {
+  margin: 0 auto;
   background-color: #81B3D2;
+}
+
+.foto__title {
+  line-height: 24px;
+}
+.foto_autor {
+  line-height: 24px;
+  text-transform: none;
+}
+.foto__number {
+  line-height: 24px;
+  font-weight: bold;
 }
