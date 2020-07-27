@@ -1,14 +1,14 @@
 .page-header {
-display: flex;
-flex-wrap: wrap;
-background-color:$background;
-width: 320px;
+  display: flex;
+  position: relative;
+  background-color:$background;
+  width: 320px;
 }
 
 .page-header__logo {
   position: absolute;
   z-index: 2;
-  margin-left: 109px;
+  margin: 223px 0 0 109px;
   width: 102px;
   height: 84px;
 }
