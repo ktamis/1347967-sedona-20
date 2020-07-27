@@ -1,3 +1,10 @@
+.page-header {
+display: flex;
+flex-wrap: wrap;
+background-color:$background;
+width: 320px;
+}
+
 .page-header__logo {
   position: absolute;
   z-index: 2;

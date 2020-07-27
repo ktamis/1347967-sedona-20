@@ -1,8 +1,5 @@
 .mobile-nav {
-  display: flex;
-  flex-wrap: wrap;
-  background-color:$background;
-  width: 320px;
+
   min-height: 223px;
 }
 
@@ -16,7 +13,6 @@
   font-size: $secondary-font-size;
   font-weight: bold;
   color: $secondary-text-color;
-  text-decoration: none;
 }
 .mobile-nav__toggle {
   position: absolute;
