@@ -1,0 +1,36 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__contacts {
+  font-size: $primary-line-height;
+  line-height: 26px;
+  font-weight: bold;
+}
+.page-footer__social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  margin: 0 3px;
+  background-color: $background;
+}
+
+.footer-copyright {
+  display: flex;
+}
+.footer-copyright p {
+  line-height: 26px;
+}

@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext">
 </head>
+
 <body class="page-body">
+<div class="container">
 <header class="page-header">
   <nav class="mobile-nav">
     <ul class="mobile-nav__list site-list">
-      <li class="site-list__item site-list__icon"><a href="#">Главная</a></li>
+      <li class="site-list__item site-list__icon"><a href="#" >Главная</a></li>
       <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
       <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
       <li class="site-list__item"><a href="#">HTML Academy</a></li>
@@ -20,15 +24,15 @@
     </button>
   </nav>
   <a class="page-header__logo">
-    <img src="#" width="200" height="100" alt="Логотип Седоны">
+    <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
   </a>
 </header>
 
 <main class="page-main">
-  <h1>Седона - городок в Аризоне</h1>
+  <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
   <section class="page-ad">
     <div>
-      <img src="#" class="page-ad__welcome" width="200" height="100" alt="Приветствие и приглашение посетить Седону">
+      <img src="img/text-sedona-index.svg" class="page-ad__welcome" width="282" height="214" alt="Приветствие и приглашение посетить Седону">
     </div>
     <div class="page-ad__wrapper">
       <h2 class="page-ad__slogan"> Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -38,13 +42,13 @@
 
   <section class="reason">
     <h3 class="visually-hidden">Первая причина для посещения Седоны</h3>
-    <div class="reason__wrapper">
+    <div class="reason__wrapper color-white">
       <p class="reason__title">Настоящий городок</p>
       <p class="reason__number">— №1 —</p>
       <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
     </div>
-    <div class="reason__wrapper__picture">
-      <img src="#" width="200" height="100" alt="Фото города Седоны, причина №1">
+    <div class="reason__picture">
+      <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города Седоны, причина №1">
     </div>
   </section>
 
@@ -67,33 +71,33 @@
 
   <section class="reason">
     <h3 class="visually-hidden">Вторая причина для посещения Седоны</h3>
-    <div class="reason__wrapper__picture">
-      <img src="#" width="100" height="100" alt="Фото моста дьявола, причина №2">
+    <div class="reason__picture">
+      <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото моста дьявола, причина №2">
     </div>
-    <div class="reason__wrapper">
+    <div class="reason__wrapper color-white">
       <p class="reason__title">Там есть мост дьявола</p>
       <p class="reason__number">— №2 —</p>
       <p>Да, по нему можно пройти если вы осмелитесь, конечно</p>
     </div>
   </section>
 
-  <section class="reason-services reason-services--dark">
+  <section class="reason reason--dark">
     <h3 class="visually-hidden">Третья причина для посещения Седоны</h3>
-    <div class="reason-services__wrapper">
-      <p class="reason-services__title">Небольшая площадь</p>
-      <p class="reason-services__number">— №3 —</p>
+    <div class="reason__wrapper color-black" >
+      <p class="reason__title">Небольшая площадь</p>
+      <p class="reason__number">— №3 —</p>
       <p>Все интересные места находятся очень близко</p>
     </div>
-    <div class="reason-services__wrapper">
+    <div class="reason__wrapper">
       <h3 class="visually-hidden">Четвертая причина для посещения Седоны</h3>
-      <p class="reason-services__title">Красивая дорога</p>
-      <p class="reason-services__number">— №4 —</p>
+      <p class="reason__title">Красивая дорога</p>
+      <p class="reason__number">— №4 —</p>
       <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
     </div>
-    <div class="reason-services__wrapper">
+    <div class="reason__wrapper">
       <h3 class="visually-hidden">Пятая причина для посещения Седоны</h3>
-      <p class="reason-services__title">Мало туристов</p>
-      <p class="reason-services__number">— №5 —</p>
+      <p class="reason__title">Мало туристов</p>
+      <p class="reason__number">— №5 —</p>
       <p>Большинство едет в Гранд Каньон и толпится там</p>
     </div>
   </section>
@@ -108,15 +112,27 @@
   <div class="page-footer__social">
     <ul>
       <li>
-        <a class="page-footer__social-button" href="#">Переход на страницу Седоны в Twitter
+        <a class="page-footer__social-button" href="#" aria-label="Переход на страницу Седоны в Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="48" viewBox="0 0 17 15" role="img">
+            <title>Иконка Twitter</title>
+            <path d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
+          </svg>
         </a>
       </li>
       <li>
-        <a class="page-footer__social-button" href="#">Переход на страницу Седоны в Facebook
+        <a class="page-footer__social-button" href="#" aria-label="Переход на страницу Седоны в Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="48" viewBox="0 0 12 22" role="img">
+            <title>Иконка Facebook</title>
+            <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
+          </svg>
         </a>
       </li>
       <li>
-        <a class="page-footer__social-button" href="#">Переход на страницу Седоны в Youtube
+        <a class="page-footer__social-button" href="#" aria-label="Переход на страницу Седоны в Youtube">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="48" viewBox="0 0 20 16" role="img">
+            <title>Иконка Youtube</title>
+            <path d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
+          </svg>
         </a>
       </li>
     </ul>
@@ -129,6 +145,6 @@
     </a>
   </div>
 </footer>
-
+</div>
 </body>
 </html>
