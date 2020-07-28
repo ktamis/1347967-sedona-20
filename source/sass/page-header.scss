@@ -1,8 +1,8 @@
 .page-header {
   display: flex;
   position: relative;
-  background-color:$background;
-  width: 320px;
+  min-height: 279px;
+  background-color: #ffffff;
 }
 
 .page-header__logo {

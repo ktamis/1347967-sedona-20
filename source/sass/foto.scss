@@ -1,11 +1,10 @@
 .foto {
   display: flex;
   flex-direction: column;
-  width: 320px;
 }
 .foto__wrapper {
   margin: 0 auto;
-  background-color: #E5E5E5;
+  background-color: $background;
 }
 .foto_caption {
 padding-left: 20px;
