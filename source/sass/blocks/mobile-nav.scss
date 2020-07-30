@@ -1,6 +1,4 @@
-.mobile-nav {
 
-}
 
 .mobile-nav__list {
   display: flex;
@@ -14,6 +12,7 @@
 }
 
 .mobile-nav__list a {
+  display: block;
   width: 100%;
   color: $secondary-text-color;
 }
@@ -28,4 +27,27 @@
 }
 .mobile-nav__toggle {
   position: absolute;
+}
+@media (min-width: $tablet-width) {
+  .mobile-nav__list  {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    margin: 0 34px;
+    padding: 15px 0;
+    list-style: none;
+    background-color: white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .mobile-nav__list  {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    margin: 0 76px;
+    padding: 15px 0;
+    list-style: none;
+    background-color: white;
+  }
 }

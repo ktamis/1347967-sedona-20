@@ -17,6 +17,9 @@
   padding: 0;
   list-style: none;
 }
+.page-footer__social-button path {
+  fill: #ffffff;
+}
 
 .page-footer__social-button {
   display: flex;
@@ -28,9 +31,9 @@
   background-color: $background;
 }
 
-.footer-copyright {
+.page-footer__copyright {
   display: flex;
 }
-.footer-copyright p {
+.page-footer__copyright p {
   line-height: 26px;
 }

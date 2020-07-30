@@ -1,0 +1,33 @@
+fieldset {
+  border: 0 none;
+}
+
+.user-form__title {
+  text-align: center;
+  font-size: $secondary-font-size;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.user-form__name {
+  margin: 0 10px;
+  display: flex;
+}
+.user-form__name label {
+  line-height: 26px;
+  color: #333333;
+}
+
+.user-form__name input {
+  height: 58px;
+  background-color: $primary-color;
+  border: none;
+}
+.user-form__name input::placeholder {
+  padding-left: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: none;
+  color: #000000;
+}

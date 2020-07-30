@@ -2,7 +2,7 @@
   display: flex;
   min-height: 631px;
   position: relative;
-  background-image: url("../img/bg-back-mobile@1x.jpg"), url("../img/bg-intro-triangle-mobile.svg");
+  background-image: url("../../img/bg-back-mobile@1x.jpg"), url("../../img/bg-intro-triangle-mobile.svg");
   background-size: 100%, cover;
   background-repeat: no-repeat;
   background-position: right 0 top 0, center -90px;
@@ -23,8 +23,7 @@
 
 .page-ad__slogan {
   font-size: $secondary-font-size;
-  font-weight: bold;
-  line-height: 26px;
+  @include font-style();
   text-align: center;
 }
 .page-ad__wrapper p {
