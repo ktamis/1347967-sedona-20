@@ -4,24 +4,27 @@
   min-height: 279px;
   background-color: #ffffff;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+  }
 }
 
 .page-header__logo {
   position: absolute;
   z-index: 2;
-  margin: 223px 0 0 109px;
+  top: 223px;
+  left: 109px;
   width: 102px;
   height: 84px;
-}
 
-@media (min-width: $tablet-width) {
-  .page-header {
-
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: 333px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header {
-
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 507px;
   }
 }

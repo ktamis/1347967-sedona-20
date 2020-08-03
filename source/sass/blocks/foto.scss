@@ -2,21 +2,69 @@
   display: flex;
   flex-direction: column;
 }
+
 .foto__wrapper {
   margin: 0 auto;
   background-color: $background;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
+
 .foto_caption {
-padding-left: 20px;
+  position: relative;
+  padding-top: 11px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 80px;
+    background-color: #f2f2f2;
+  }
 }
+
 .foto__title {
   line-height: 24px;
+  margin: 0;
 }
+
 .foto_autor {
+  margin: 0;
   line-height: 24px;
   text-transform: none;
 }
+
 .foto__number {
+  margin-left: 37px;
   line-height: 24px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+}
+
+.foto__icon {
+  position: relative;
+}
+
+.foto__icon::before {
+  position: absolute;
+  top: 59px;
+  right: 277px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 23px;
+  height: 21px;
+  background-image: url("../../img/icon-like.svg");
+
+
+  @media (min-width: $tablet-width) {
+    top: 28px;
+    right: 62px;
+  }
 }

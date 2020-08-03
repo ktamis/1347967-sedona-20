@@ -1,6 +1,8 @@
 .page-ad {
   display: flex;
+  flex-direction: column;
   min-height: 631px;
+  align-items: center;
   position: relative;
   background-image: url("../../img/bg-back-mobile@1x.jpg"), url("../../img/bg-intro-triangle-mobile.svg");
   background-size: 100%, cover;
@@ -8,24 +10,58 @@
   background-position: right 0 top 0, center -90px;
   background-color: $background;
 }
+
 .page-ad__welcome {
   position: absolute;
   top: 90px;
   left: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+    top: 77px;
+    left: 154px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 78px;
+    left: 370px;
+  }
 }
 
 .page-ad__wrapper {
-  padding: 0 25px;
+  width: 100%;
   position: absolute;
   top: 477px;
   background-color: white;
+
+  @media (min-width: $tablet-width) {
+    top: 561px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 573px;
+  }
 }
 
 .page-ad__slogan {
+  margin: 0 auto;
+  padding: 0 25px;
   font-size: $secondary-font-size;
   @include font-style();
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 520px;
+    margin: 43.5px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 483px;
+    margin: 55px auto;
+  }
 }
+
 .page-ad__wrapper p {
   margin: 0 auto;
   line-height: 26px;
@@ -38,4 +74,20 @@
   position: absolute;
   top: 108px;
   right: 46px;
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 456.9px;
+    height: 77.6px;
+    top: 95px;
+    left: 157px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 459.5px;
+    height: 79.8px;
+    top: 95px;
+    left: 369px;
+  }
 }

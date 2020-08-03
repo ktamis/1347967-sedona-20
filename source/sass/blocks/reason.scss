@@ -2,15 +2,33 @@
   display: flex;
   flex-direction: column;
   background-color: $background;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .reason__picture {
   background-color: $background;
+  height: 260px;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+  }
 }
 
 .reason__wrapper {
-   padding: 55px 12px;
- }
+  padding: 55px 12px;
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding: 40px 32px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    padding: 51px 90px;
+  }
+}
 
 .reason__title {
   font-size: $secondary-font-size;
@@ -29,43 +47,6 @@
   color: $secondary-text-color;
 }
 
-
-.reason-services__wrapper {
- margin-left: 70px;
-}
-
-
-.reason-services__icon {
-  position: relative;
-
-}
-
-.reason-services__icon::before {
-  position: absolute;
-  top: 60px;
-  content: "";
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-.reason-services__icon--housing::before{
-  width: 39px;
-  height: 36.83px;
-  margin-left: 21px;
-  background-image: url("../../img/icon-house.svg");
-}
-
-.reason-services__icon--souvenir::before {
-  width: 40px;
-  height: 34.9px;
-  margin-left: 25px;
-  margin-top: 3px;
-  background-image: url("../../img/icon-gift.svg");
-}
-
-.reason-services__icon--food::before {
-  width: 32px;
-  height: 38px;
-  margin-left: 18px;
-  background-image: url("../../img/icon-burger.svg");
+.reason--dark {
+  background-color: #EEEEEE;
 }

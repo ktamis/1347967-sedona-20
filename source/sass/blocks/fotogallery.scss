@@ -1,9 +1,24 @@
-
+.fotogallery {
+  width: 100%;
+}
+.fotogallery__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    height: 130px;
+    margin: 0 auto;
+  }
+}
 .fotogallery__title {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
+
 .fotogallery__slogan {
   text-align: center;
   line-height: 24px;

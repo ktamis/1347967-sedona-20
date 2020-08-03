@@ -13,6 +13,7 @@ fieldset {
   margin: 0 10px;
   display: flex;
 }
+
 .user-form__name label {
   line-height: 26px;
   color: #333333;
@@ -23,6 +24,7 @@ fieldset {
   background-color: $primary-color;
   border: none;
 }
+
 .user-form__name input::placeholder {
   padding-left: 22px;
   font-size: 18px;
