@@ -19,3 +19,7 @@ $desktop-width: 1200px;
   line-height: 26px;
   font-weight: bold;
 }
+@mixin label-style() {
+  background-color: $primary-color;
+  border: none;
+}

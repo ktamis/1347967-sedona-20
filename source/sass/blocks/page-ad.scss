@@ -31,17 +31,10 @@
 
 .page-ad__wrapper {
   width: 100%;
+  min-height: 206px;
   position: absolute;
-  top: 477px;
+  bottom: 0;
   background-color: white;
-
-  @media (min-width: $tablet-width) {
-    top: 561px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 573px;
-  }
 }
 
 .page-ad__slogan {
@@ -53,16 +46,17 @@
 
   @media (min-width: $tablet-width) {
     width: 520px;
-    margin: 43.5px auto;
+    margin: 43.5px auto 28px;
   }
 
   @media (min-width: $desktop-width) {
     width: 483px;
-    margin: 55px auto;
+    margin: 55px auto 28px;
   }
 }
 
 .page-ad__wrapper p {
+  max-width: 575px;
   margin: 0 auto;
   line-height: 26px;
   text-align: center;

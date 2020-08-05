@@ -1,14 +1,14 @@
-.fotogallery {
+.photo-gallery {
   width: 100%;
 }
-.fotogallery__wrapper {
+.photo-gallery__wrapper {
   @media (min-width: $tablet-width) {
     width: 440px;
     height: 130px;
     margin: 0 auto;
   }
 }
-.fotogallery__title {
+.photo-gallery__title {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -19,7 +19,7 @@
   }
 }
 
-.fotogallery__slogan {
+.photo-gallery__slogan {
   text-align: center;
   line-height: 24px;
 }

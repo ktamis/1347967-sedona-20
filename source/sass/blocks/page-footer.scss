@@ -5,12 +5,11 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-  }
-
-  @media (min-width: $desktop-width) {
-
+    align-items: center;
+    justify-content: space-around;
+    min-height: 120px;
   }
 }
 
@@ -45,8 +44,10 @@
 
 .page-footer__copyright {
   display: flex;
+  align-items: center;
 }
 
 .page-footer__copyright p {
+  margin-right: 10px;
   line-height: 26px;
 }

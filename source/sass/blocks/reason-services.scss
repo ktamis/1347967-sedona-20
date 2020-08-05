@@ -19,22 +19,19 @@
 }
 
 .reason-services__wrapper {
-  margin-left: 70px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 158px;
-    width: 185px;
+    padding: 158px 30px 47px 30px;
+    width: 33%;
     text-align: center;
   }
   @media (min-width: $desktop-width) {
-    width: 282px;
+    padding: 160px 55px 47px 55px;
   }
 }
 
-
 .reason-services__icon {
   position: relative;
-
 }
 
 .reason-services__icon::before {
@@ -44,6 +41,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+
+  @media (min-width: $tablet-width) {
+    left: 50%;
+  }
 }
 
 .reason-services__icon--housing::before {
@@ -51,6 +52,12 @@
   height: 36.83px;
   margin-left: 21px;
   background-image: url("../../img/icon-house.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+    margin: 0;
+  }
 }
 
 .reason-services__icon--souvenir::before {
@@ -59,6 +66,12 @@
   margin-left: 25px;
   margin-top: 3px;
   background-image: url("../../img/icon-gift.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 64px;
+    height: 75px;
+    margin: 0;
+  }
 }
 
 .reason-services__icon--food::before {
@@ -66,4 +79,10 @@
   height: 38px;
   margin-left: 18px;
   background-image: url("../../img/icon-burger.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 76px;
+    height: 67.9px;
+    margin: 0;
+  }
 }
