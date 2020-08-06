@@ -1,13 +1,13 @@
 .page-ad {
   display: flex;
   flex-direction: column;
-  min-height: 631px;
+  height: 631px;
   align-items: center;
   position: relative;
-  background-image: url("../../img/bg-back-mobile@1x.jpg"), url("../../img/bg-intro-triangle-mobile.svg");
+  background-image: url("../../img/bg-triangle.svg"), url("../../img/bg-intro-triangle-mobile.svg"), url("../../img/bg-back-mobile@1x.jpg");
   background-size: 100%, cover;
   background-repeat: no-repeat;
-  background-position: right 0 top 0, center -90px;
+  background-position:right 0 bottom 0, right 0 bottom 205px, center -90px;
   background-color: $background;
 }
 

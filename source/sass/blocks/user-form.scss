@@ -50,12 +50,15 @@ fieldset {
   padding-left: 26px;
   margin-left: 98px;
 }
-.user-form__emotion input {
-  width: 100%;
+.user-form__emotion {
   min-height: 160px;
-  @include label-style();
+ }
+.user-form__emotion--style {
+  background-color: $primary-color;
+  border: none;
 }
-.user-form__emotion input::placeholder {
+
+.user-form__emotion textarea::placeholder {
   padding-left: 21px;
   font-size: 18px;
   @include font-style();

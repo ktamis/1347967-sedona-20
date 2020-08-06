@@ -30,3 +30,9 @@
     height: 96.4px;
   }
 }
+.page-header__logo--size {
+  @media (min-width: $desktop-width) {
+    width: 186.6px;
+    height: 96.4px;
+  }
+}

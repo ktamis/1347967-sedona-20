@@ -1,6 +1,11 @@
 .reason-services {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+
+  @media (min-width:$mobile-width-only) {
+    padding: 35px 40px 35px 70px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
