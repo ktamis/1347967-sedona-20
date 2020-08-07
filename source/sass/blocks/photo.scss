@@ -1,0 +1,105 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__wrapper {
+  margin: 0 auto;
+  background-color: $background;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 267px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    height: 267px;
+  }
+}
+
+.photo__wrapper--big {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 400px;
+  }
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+      height: 400px;
+    }
+}
+.photo--size {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 267px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    height: 267px;
+  }
+}
+.photo_big--size {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 400px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 400px;
+  }
+}
+.photo_caption {
+  position: relative;
+  padding-top: 11px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 80px;
+    background-color: #f2f2f2;
+  }
+}
+
+.photo__title {
+  line-height: 24px;
+  margin: 0;
+}
+
+.photo_autor {
+  margin: 0;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.photo__number {
+  margin-left: 37px;
+  line-height: 24px;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+}
+
+.photo__icon {
+  position: relative;
+}
+
+.photo__icon::before {
+  position: absolute;
+  top: 59px;
+  right: 277px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 23px;
+  height: 21px;
+  background-image: url("../../img/icon-like.svg");
+
+
+  @media (min-width: $tablet-width) {
+    top: 28px;
+    right: 62px;
+  }
+}

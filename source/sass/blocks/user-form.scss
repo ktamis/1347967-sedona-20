@@ -1,0 +1,115 @@
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+
+.user-form {
+  border-bottom: 1px solid  #E5E5E5;
+}
+
+.user-form__title {
+  text-align: center;
+  font-size: $secondary-font-size;
+  @include font-style();
+}
+
+.user-form__contact {
+  margin: 0 10px;
+  display: flex;
+}
+
+.user-form__contact label {
+  line-height: 26px;
+  color: #333333;
+}
+
+.user-form__contact input {
+  height: 58px;
+  @include label-style();
+}
+
+.user-form__contact input::placeholder {
+  padding-left: 22px;
+  font-size: 18px;
+  @include font-style();
+  text-transform: none;
+  color: #000000;
+}
+.user-form__question {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-form__question label {
+  position: relative;
+  font-size: 18px;
+  @include font-style();
+  text-transform: none;
+  padding-left: 26px;
+  margin-left: 98px;
+}
+.user-form__emotion {
+  min-height: 160px;
+ }
+.user-form__emotion--style {
+  background-color: $primary-color;
+  border: none;
+}
+
+.user-form__emotion textarea::placeholder {
+  padding-left: 21px;
+  font-size: 18px;
+  @include font-style();
+  text-transform: none;
+  color: #000000;
+}
+.user-form__question input[type="checkbox"] {
+  display: none;
+  }
+
+.user-form__question-input--circle[type="checkbox"] + label::before {
+  position: absolute;
+  top: 0;
+  left: -26px;
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-color: $primary-color;
+  border: 5px solid $primary-color;
+  border-radius: 50%;
+}
+
+.user-form__question-input[type="checkbox"] + label::before {
+  position: absolute;
+  top: 0;
+  left: -26px;
+  content: "";
+  width: 23px;
+  height: 16px;
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border: 5px solid $primary-color;;
+}
+
+.user-form__btn {
+  margin-top: 51px;
+  margin-left: 19px;
+  margin-bottom: 48px;
+  font-size: 21px;
+  text-transform: uppercase;
+  @include font-style();
+  text-align: center;
+}
+.user-form__btn--size {
+  width: 280px;
+  height: 58px;
+}
+.user-form__btn--color {
+  background-color: $background;
+  color: #f2f2f2;
+  border: none;
+}

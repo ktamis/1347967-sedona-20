@@ -1,0 +1,25 @@
+.photo-gallery {
+  width: 100%;
+}
+.photo-gallery__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    height: 130px;
+    margin: 0 auto;
+  }
+}
+.photo-gallery__title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.photo-gallery__slogan {
+  text-align: center;
+  line-height: 24px;
+}

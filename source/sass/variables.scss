@@ -1,12 +1,25 @@
+// Color
 $background: #81B3D2;
 $primary-color: #f2f2f2;
 $primary-text-color: #000000;
 $secondary-text-color: #ffffff;
+// Size
 $primary-font-size: 14px;
 $secondary-font-size: 18px;
 $primary-line-height: 21px;
+// Fonts
 $primary-font: "PT Sans", "Arial", "sans-serif";
 $visible: none;
-$mobile-width: 320px;
+//
+$mobile-width-only: 320px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+// Mixin
+@mixin font-style() {
+  line-height: 26px;
+  font-weight: bold;
+}
+@mixin label-style() {
+  background-color: $primary-color;
+  border: none;
+}
