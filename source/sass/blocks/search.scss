@@ -1,0 +1,100 @@
+.search {
+  position: relative;
+  text-align: center;
+}
+.search__content {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 33px;
+  padding-bottom: 49px;
+  background-color: #ffffff;
+}
+.search__question {
+  max-width: 261px;
+  font-size: 21px;
+  line-height: 26px;
+  @include font-style();
+  font-stretch: normal;
+  text-align: center;
+  margin: 0 auto 23px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 435px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+.search__choice {
+  max-width: 261px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  color: #333333;
+
+  @media (min-width: $tablet-width) {
+    max-width: 435px;
+  }
+}
+
+.search__button {
+  font-family: $primary-font;
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+}
+/*
+.button-brown:hover, .button-brown:focus {
+  background-color: #604e43;
+}
+.button-brown:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+*/
+.search__button--colorname {
+  background-color: $background;
+  border: none;
+}
+.search__button--filter {
+  display: block;
+  width: 280px;
+  padding: 14.5px 32px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
+}
+.search__map {
+  background-color: $background;
+}
+
+.search__map--size {
+  height: 350px;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 350px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 350px;
+  }
+
+}
+/*
+.search__map {
+  position: relative;
+  background-color: #ebebeb;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}*/

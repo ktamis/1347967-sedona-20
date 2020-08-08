@@ -16,13 +16,4 @@
   }
 }
 
-.contant {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 59px 60px;
-  }
-  @media (min-width: $desktop-width) {
-      margin: 0;
-    }
-}
+
