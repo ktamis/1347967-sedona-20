@@ -2,17 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding: 35px 40px 35px 70px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     min-height: 330px;
-  }
-}
-
-@media (min-width:$mobile-width-only) {
-  .reason-services {
-    padding: 35px 40px 35px 70px;
+    padding: 0;
   }
 }
 

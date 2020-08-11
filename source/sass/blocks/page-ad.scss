@@ -1,13 +1,13 @@
 .page-ad {
   display: flex;
   flex-direction: column;
-  height: 631px;
+  min-height: 631px;
   align-items: center;
   position: relative;
-  background-image: url("../../img/bg-triangle.svg"), url("../../img/bg-intro-triangle-mobile.svg"), url("../../img/bg-back-mobile@1x.jpg");
+  background-image: /*url("../../img/bg-triangle.svg"),*/ url("../../img/bg-intro-triangle-mobile.svg"), url("../../img/bg-back-mobile@1x.jpg");
   background-size: 100%, cover;
   background-repeat: no-repeat;
-  background-position:right 0 bottom 0, right 0 bottom 205px, center -90px;
+  background-position:/*right 0 bottom 0,*/ right 0 bottom 205px, center -90px;
   background-color: $background;
 }
 
@@ -39,7 +39,7 @@
 
 .page-ad__slogan {
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 32px 25px;
   font-size: $secondary-font-size;
   @include font-style();
   text-align: center;
@@ -56,8 +56,8 @@
 }
 
 .page-ad__wrapper p {
-  max-width: 575px;
   margin: 0 auto;
+  padding: 0 18px;
   line-height: 26px;
   text-align: center;
   color: #333333;

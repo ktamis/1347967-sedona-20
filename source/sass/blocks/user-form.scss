@@ -8,28 +8,37 @@ fieldset {
   border-bottom: 1px solid  #E5E5E5;
 }
 
+.user-form__contact {
+  margin: 0;
+  padding: 0;
+
+}
 .user-form__title {
+  padding: 20px 0;
   text-align: center;
   font-size: $secondary-font-size;
   @include font-style();
 }
 
-.user-form__contact {
-  margin: 0 10px;
+.user-form__list {
+  margin: 0 20px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.user-form__contact label {
+.user-form__list label {
   line-height: 26px;
   color: #333333;
 }
 
-.user-form__contact input {
+.user-form__list input {
+  width: 100%;
   height: 58px;
   @include label-style();
 }
 
-.user-form__contact input::placeholder {
+.user-form__list input::placeholder {
   padding-left: 22px;
   font-size: 18px;
   @include font-style();
@@ -50,9 +59,11 @@ fieldset {
   padding-left: 26px;
   margin-left: 98px;
 }
+
 .user-form__emotion {
   min-height: 160px;
- }
+}
+
 .user-form__emotion--style {
   background-color: $primary-color;
   border: none;

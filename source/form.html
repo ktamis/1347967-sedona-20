@@ -30,9 +30,10 @@
 
 <main class="page-main">
   <h1 class="visually-hidden">Седона городок в Аризоне</h1>
-  <section class="page-ad">
-    <div class="page-ad__wrap">
-      <img src="img/text-sedona.svg" class="page-ad__name" width="229" height="39" alt="Название города - Седона">
+
+  <section class="page-start">
+    <div class="page-start__wrap">
+      <img class="page-start__name" src="img/text-sedona.svg"  width="229" height="39" alt="Название города - Седона">
     </div>
   </section>
 
@@ -48,32 +49,36 @@
     <section class="user-form">
       <fieldset>
         <legend class="user-form__title">Представьтесь:</legend>
-        <div class="user-form__contact">
-          <label for="name1">Имя*:</label>
-          <input id="name1" type="text" name="name1" placeholder="Петр">
-        </div>
-        <div class="user-form__contact">
-          <label for="name2">Фамилия*:</label>
-          <input id="name2" type="text" name="name2" placeholder="Иванов">
-        </div>
-        <div class="user-form__contact">
-          <label for="name3">Отчество:</label>
-          <input id="name3" type="text" name="name3" placeholder="Александрович">
-        </div>
+        <ul class="user-form__contact">
+          <li class="user-form__list">
+            <label for="name1">Имя*:</label>
+            <input id="name1" type="text" name="name1" placeholder="Петр">
+          </li>
+          <li class="user-form__list">
+            <label for="name2">Фамилия*:</label>
+            <input id="name2" type="text" name="name2" placeholder="Иванов">
+          </li>
+          <li class="user-form__list">
+            <label for="name3">Отчество:</label>
+            <input id="name3" type="text" name="name3" placeholder="Александрович">
+          </li>
+        </ul>
       </fieldset>
     </section>
 
     <section class="user-form">
       <fieldset>
         <legend class="user-form__title">Контактная информация:</legend>
-        <div class="user-form__contact">
+        <ul class="user-form__contact">
+        <li class="user-form__list">
           <label for="tel">Контактный телефон*:</label>
           <input id="tel" type="text" name="tel" placeholder="Введите телефон">
-        </div>
-        <div class="user-form__contact">
+        </li>
+        <li class="user-form__list">
           <label for="email">Электронная почта*:</label>
           <input id="email" type="text" name="email" placeholder="Введите e-mail">
-        </div>
+        </li>
+        </ul>
       </fieldset>
     </section>
 

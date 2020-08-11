@@ -42,6 +42,19 @@
   background-color: $background;
 }
 
+.page-footer__social-button:hover, .page-footer__social-button:focus {
+  background-color: #669ec0;
+}
+.page-footer__social-button:active {
+  background-color: #5496bd;
+}
+.page-footer__social-button path {
+  fill: #ffffff;
+}
+.page-footer__social-button:active path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
 .page-footer__copyright {
   display: flex;
   align-items: center;
@@ -51,3 +64,10 @@
   margin-right: 10px;
   line-height: 26px;
 }
+
+.page-footer__logo path:hover {
+    fill: #81b3d2;
+  }
+.page-footer__logo:active path, .page-footer__logo:focus path {
+    fill: #bdbbbc;
+  }

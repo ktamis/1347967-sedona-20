@@ -1,13 +1,32 @@
 .form__ad {
-  padding: 36px 6px 16px;
+  padding: 36px 6px 0;
   text-align: center;
   border-bottom: 1px solid  #E5E5E5;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 166px 55px;
+    border-bottom: none;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 400px;
+  }
 }
+
 .form__title {
   font-size: $secondary-font-size;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    @include font-style()
+  }
 }
 .form__slogan {
   line-height: 24px;
   color: #333333;
+
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+  }
 }

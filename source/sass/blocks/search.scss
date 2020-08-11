@@ -50,15 +50,18 @@
   color: #ffffff;
 
 }
-/*
-.button-brown:hover, .button-brown:focus {
-  background-color: #604e43;
+
+.search__button:hover, .search__button:focus {
+  background-color: #669EC0;
 }
-.button-brown:active {
-  background-color: #503e33;
+.search__button:active {
+  background-color: #5496BD;
   color: rgba(255, 255, 255, 0.3);
 }
-*/
+.search__button:disabled {
+  background: #E5E5E5;
+}
+
 .search__button--colorname {
   background-color: $background;
   border: none;
