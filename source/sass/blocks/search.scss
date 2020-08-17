@@ -82,6 +82,7 @@
 
 .search__map--size {
   height: 350px;
+  display: block;
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 350px;

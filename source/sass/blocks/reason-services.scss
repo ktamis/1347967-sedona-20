@@ -1,8 +1,9 @@
+
 .reason-services {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 35px 40px 35px 70px;
+  padding: 16px 40px 20px 70px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,21 +16,41 @@
 .reason-services__title {
   font-size: $secondary-font-size;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    @include font-style();
+  }
 }
 
-.color-black {
+@media (min-width: $tablet-width) {
+  .reason-services__wrapper--one {
+    order: 1;
+  }
+
+  .reason-services__wrapper--two {
+    order: 3;
+  }
+
+  .reason-services__wrapper--three {
+    order: 2;
+  }
+}
+
+
+.cl-black {
   color: $primary-text-color;
 }
 
 .reason-services__wrapper {
 
   @media (min-width: $tablet-width) {
-    padding: 158px 30px 47px 30px;
-    width: 33%;
+    padding: 138px 40px 47px 45px;
+    width: 33.3%;
     text-align: center;
   }
   @media (min-width: $desktop-width) {
-    padding: 160px 55px 47px 55px;
+    padding: 140px 55px 47px 55px;
   }
 }
 
@@ -39,31 +60,34 @@
 
 .reason-services__icon::before {
   position: absolute;
-  top: 60px;
   content: "";
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-
-  @media (min-width: $tablet-width) {
-    left: 50%;
-  }
 }
 
 .reason-services__icon--housing::before {
+  top: 10px;
+  left: -50px;
   width: 39px;
   height: 36.83px;
-  margin-left: 21px;
   background-image: url("../../img/icon-house.svg");
 
   @media (min-width: $tablet-width) {
+    top: 60px;
+    left: 87px;
     width: 75px;
     height: 72px;
     margin: 0;
   }
+  @media (min-width: $desktop-width) {
+    left: 161px;
+  }
 }
 
 .reason-services__icon--souvenir::before {
+  top: 3px;
+  left: -75px;
   width: 40px;
   height: 34.9px;
   margin-left: 25px;
@@ -71,21 +95,33 @@
   background-image: url("../../img/icon-gift.svg");
 
   @media (min-width: $tablet-width) {
+    top: 57px;
+    left: 95px;
     width: 64px;
     height: 75px;
     margin: 0;
   }
+  @media (min-width: $desktop-width) {
+    left: 164px;
+  }
 }
 
 .reason-services__icon--food::before {
+  top: 5px;
+  left: -67px;
   width: 32px;
   height: 38px;
   margin-left: 18px;
   background-image: url("../../img/icon-burger.svg");
 
   @media (min-width: $tablet-width) {
+    top: 60px;
+    left: 92px;
     width: 76px;
     height: 67.9px;
     margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+    left: 162px;
   }
 }

@@ -1,7 +1,7 @@
 .photo {
   display: flex;
   flex-direction: column;
-  padding: 22px 20px;
+  padding: 18px 20px;
   border-top: 1px solid #E5E5E5;
 
   @media (min-width: $tablet-width) {
@@ -72,6 +72,7 @@
 }
 
 .photo__title {
+  font-size: $primary-font-size;
   line-height: 24px;
   margin: 0;
 
@@ -92,12 +93,13 @@
 
 .photo__number {
   margin-left: 37px;
+  margin-bottom: 0;
   line-height: 24px;
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 20px;
   }
   @media (min-width: $desktop-width) {
@@ -111,8 +113,7 @@
 
 .photo__icon::before {
   position: absolute;
-  top: 59px;
-  right: 277px;
+  top: 70px;
   content: "";
   background-repeat: no-repeat;
   background-size: contain;

@@ -57,6 +57,7 @@
   }
 }
 .site-list li {
+
   @media (min-width: $tablet-width) {
     width: 20%;
     &:nth-child(4n + 1) {
