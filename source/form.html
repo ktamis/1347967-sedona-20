@@ -24,15 +24,19 @@
     </button>
   </nav>
   <a class="page-header__logo" href="index.html"><span class="visually-hidden">Переход на главную</span>
-    <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+      <img class="page-header__logo--size" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+    </picture>
   </a>
 </header>
 
 <main class="page-main">
   <h1 class="visually-hidden">Седона городок в Аризоне</h1>
-  <section class="page-ad">
-    <div class="page-ad__wrap">
-      <img src="img/text-sedona.svg" class="page-ad__name" width="229" height="39" alt="Название города - Седона">
+
+  <section class="page-start">
+    <div class="page-start__wrap">
+      <img class="page-start__name" src="img/text-sedona.svg"  width="229" height="39" alt="Название города - Седона">
     </div>
   </section>
 
@@ -44,77 +48,82 @@
       <p class="form__slogan">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
     </div>
-
-    <section class="user-form">
+<div class="form__position">
+    <section class="user-form form__position--one">
       <fieldset>
         <legend class="user-form__title">Представьтесь:</legend>
-        <div class="user-form__contact">
-          <label for="name1">Имя*:</label>
-          <input id="name1" type="text" name="name1" placeholder="Петр">
-        </div>
-        <div class="user-form__contact">
-          <label for="name2">Фамилия*:</label>
-          <input id="name2" type="text" name="name2" placeholder="Иванов">
-        </div>
-        <div class="user-form__contact">
-          <label for="name3">Отчество:</label>
-          <input id="name3" type="text" name="name3" placeholder="Александрович">
-        </div>
-      </fieldset>
-    </section>
-
-    <section class="user-form">
-      <fieldset>
-        <legend class="user-form__title">Контактная информация:</legend>
-        <div class="user-form__contact">
-          <label for="tel">Контактный телефон*:</label>
-          <input id="tel" type="text" name="tel" placeholder="Введите телефон">
-        </div>
-        <div class="user-form__contact">
-          <label for="email">Электронная почта*:</label>
-          <input id="email" type="text" name="email" placeholder="Введите e-mail">
-        </div>
-      </fieldset>
-    </section>
-
-    <section class="user-form">
-      <fieldset>
-        <legend class="user-form__title">Ваше общее впечатление:</legend>
-        <ul class="user-form__question">
-          <li>
-            <input class="user-form__question-input--circle" id="positive" type="checkbox" name="impression" value="positive" checked>
-            <label for="positive">Скорее положительное</label>
+        <ul class="user-form__list">
+          <li class="user-form__item">
+            <label for="name1">Имя*:</label>
+            <input id="name1" type="text" name="name1" placeholder="Петр">
           </li>
-          <li>
-            <input class="user-form__question-input--circle" id="negative" type="checkbox" name="impression" value="negative">
-            <label for="negative">Скорее отрицательное</label>
+          <li class="user-form__item">
+            <label for="name2">Фамилия*:</label>
+            <input id="name2" type="text" name="name2" placeholder="Иванов">
           </li>
-          <li>
-            <input class="user-form__question-input--circle" id="no-answer" type="checkbox" name="impression" value="no-answer">
-            <label for="no-answer">Затрудняюсь ответить</label>
+          <li class="user-form__item">
+            <label for="name3">Отчество:</label>
+            <input id="name3" type="text" name="name3" placeholder="Александрович">
           </li>
         </ul>
       </fieldset>
     </section>
 
-    <section class="user-form">
+    <section class="user-form form__position--two">
+      <fieldset>
+        <legend class="user-form__title">Контактная информация:</legend>
+        <ul class="user-form__list">
+        <li class="user-form__item">
+          <label for="tel">Контактный телефон*:</label>
+          <input id="tel" type="text" name="tel" placeholder="Введите телефон">
+        </li>
+        <li class="user-form__item">
+          <label for="email">Электронная почта*:</label>
+          <input id="email" type="text" name="email" placeholder="Введите e-mail">
+        </li>
+        </ul>
+      </fieldset>
+    </section>
+
+    <section class="user-form form__position--three">
+      <fieldset>
+        <legend class="user-form__title">Ваше общее впечатление:</legend>
+        <ul class="user-form__list">
+          <li class="user-form__radio">
+            <input id="positive" type="checkbox" name="impression" value="positive" checked>
+            <label for="positive">Скорее положительное</label>
+          </li>
+          <li class="user-form__radio">
+            <input id="negative" type="checkbox" name="impression" value="negative">
+            <label for="negative">Скорее отрицательное</label>
+          </li>
+          <li class="user-form__radio">
+            <input id="no-answer" type="checkbox" name="impression" value="no-answer">
+            <label for="no-answer">Затрудняюсь ответить</label>
+          </li>
+        </ul>
+      </fieldset>
+    </section>
+</div>
+
+    <section class="user-form form__position--four">
       <fieldset>
         <legend class="user-form__title">Посещенные достопримечательности:</legend>
-        <ul class="user-form__question">
-          <li>
-            <input class="user-form__question-input" id="bridge" type="checkbox" name="attraction" value="bridge" checked>
+        <ul class="user-form__list">
+          <li class="user-form__checkbox">
+            <input id="bridge" type="checkbox" name="attraction" value="bridge" checked>
             <label for="bridge">Мост дьявола</label>
           </li>
-          <li>
-            <input class="user-form__question-input" id="mountain" type="checkbox" name="attraction" value="mountain" checked>
+          <li class="user-form__checkbox">
+            <input id="mountain" type="checkbox" name="attraction" value="mountain" checked>
             <label for="mountain">Гора-Колокол</label>
           </li>
-          <li>
-            <input class="user-form__question-input" id="park" type="checkbox" name="attraction" value="park" checked>
+          <li class="user-form__checkbox">
+            <input id="park" type="checkbox" name="attraction" value="park" checked>
             <label for="park">Слайд-парк</label>
           </li>
-          <li>
-            <input class="user-form__question-input" id="rock" type="checkbox" name="attraction" value="rock">
+          <li class="user-form__checkbox">
+            <input id="rock" type="checkbox" name="attraction" value="rock">
             <label for="rock">Красные скалы</label>
           </li>
         </ul>
@@ -130,9 +139,12 @@
       </fieldset>
     </section>
 
+    <div class="form__end">
     <button
-      class="user-form__btn  user-form__btn--size user-form__btn--color" type="submit">Отправить отзыв
+      class="form__btn  form__btn--size form__btn--color" type="submit">Отправить отзыв
     </button>
+      <p class="mobile-hidden">* — Обязательные поля</p>
+    </div>
   </form>
 
 </main>

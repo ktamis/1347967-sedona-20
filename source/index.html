@@ -13,7 +13,7 @@
 <body class="page-body">
 <div class="container">
 <header class="page-header">
-  <nav class="mobile-nav">
+  <nav class="mobile-nav mobile-nav--opened">
     <ul class="mobile-nav__list site-list">
       <li class="site-list__item"><a href="#" >Главная</a></li>
       <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
@@ -27,12 +27,12 @@
   <a class="page-header__logo">
     <picture>
       <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-    <img class="page-header__logo--size" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+      <img class="page-header__logo--size" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
     </picture>
   </a>
 </header>
 
-<main class="page-main">
+  <main class="page-main">
   <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
 
   <section class="page-ad">
@@ -47,72 +47,90 @@
 
   <section class="reason">
     <h3 class="visually-hidden">Первая причина для посещения Седоны</h3>
-    <div class="reason__wrapper color-white">
+    <div class="reason__wrapper white">
       <p class="reason__title">Настоящий городок</p>
       <p class="reason__number">— №1 —</p>
-      <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+      <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
     </div>
     <div class="reason__picture">
       <picture>
-        <source  media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
-        <source  media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
-      <img class="reason__picture--size" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города Седоны, причина №1">
+        <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
+        <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
+        <img class="reason__picture--size" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города Седоны, причина №1">
       </picture>
     </div>
   </section>
 
   <section class="reason-services">
     <h3 class="visually-hidden">Услуги в городе Седона</h3>
-    <div class="reason-services__wrapper reason-services__icon reason-services__icon--housing">
+    <div class="reason-services__wrapper reason-services__wrapper--one reason-services__icon reason-services__icon--housing">
       <p class="reason-services__title">Жилье</p>
       <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
     </div>
-    <div class="reason-services__wrapper reason-services__icon reason-services__icon--souvenir">
+    <div class="reason-services__wrapper reason-services__wrapper--two reason-services__icon reason-services__icon--souvenir">
       <p class="reason-services__title">Сувениры</p>
       <p>Не только китайского, но и местного производства!
       </p>
     </div>
-    <div class="reason-services__wrapper reason-services__icon reason-services__icon--food">
+    <div class="reason-services__wrapper reason-services__wrapper--three reason-services__icon reason-services__icon--food">
       <p class="reason-services__title">Еда</p>
       <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
     </div>
   </section>
 
-  <section class="reason">
-    <h3 class="visually-hidden">Вторая причина для посещения Седоны</h3>
-    <div class="reason__picture">
-      <picture>
-        <source  media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
-        <source  media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
-      <img class="reason__picture--size" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото моста дьявола, причина №2">
-      </picture>
-    </div>
-    <div class="reason__wrapper color-white">
-      <p class="reason__title">Там есть
-        <br>мост дьявола</p>
-      <p class="reason__number">— №2 —</p>
-      <p>Да, по нему можно пройти если вы осмелитесь, конечно</p>
-    </div>
-  </section>
+    <section class="reason reason-other">
+      <h3 class="visually-hidden">Вторая причина для посещения Седоны</h3>
+      <div class="reason-other__wrapper reason-other__wrapper--one white">
+        <p class="reason__title">Там есть
+          <br class="mobile-hidden">мост дьявола</p>
+        <p class="reason__number">— №2 —</p>
+        <p>Да, по нему можно пройти если вы осмелитесь, конечно</p>
+      </div>
+      <div class="reason__picture">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
+          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
+          <img class="reason__picture--size" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото моста дьявола, причина №2">
+        </picture>
+      </div>
 
-  <section class="reason reason--dark">
+    </section>
+
+    <section class="reason reason-other bg-grey">
     <h3 class="visually-hidden">Третья причина для посещения Седоны</h3>
-    <div class="reason__wrapper color-black" >
+    <div class="reason-other__wrapper reason-other__wrapper--dark black" >
       <p class="reason__title">Небольшая площадь</p>
       <p class="reason__number">— №3 —</p>
       <p>Все интересные места находятся очень близко</p>
     </div>
-    <div class="reason__wrapper">
+    <div class="reason-other__wrapper reason-other__wrapper--dark">
       <h3 class="visually-hidden">Четвертая причина для посещения Седоны</h3>
       <p class="reason__title">Красивая дорога</p>
       <p class="reason__number">— №4 —</p>
       <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
     </div>
-    <div class="reason__wrapper">
+    <div class="reason-other__wrapper reason-other__wrapper--dark">
       <h3 class="visually-hidden">Пятая причина для посещения Седоны</h3>
       <p class="reason__title">Мало туристов</p>
       <p class="reason__number">— №5 —</p>
       <p>Большинство едет в Гранд Каньон и толпится там</p>
+    </div>
+  </section>
+
+  <section class="search">
+    <div class="search__content">
+      <p class="visually-hidden">Поиск гостиниц в Седоне</p>
+      <p class="search__question">Заинтересовались?</p>
+      <p class="search__choice">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <button class="search__button search__button--colorname search__button--filter" type="button">Найти гостиницу
+      </button>
+    </div>
+    <div class="search__map">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+        <img class="search__map--size" src="img/bg-map-mobile@1x.jpg" alt="Карта расположения города Седона в штате Аризона" width="320" height="350">
+      </picture>
     </div>
   </section>
 </main>
@@ -120,7 +138,7 @@
 <footer class="page-footer">
   <div class="page-footer__contacts">
     <p>
-      <span>#Visitsedona</span>
+      #Visitsedona
     </p>
   </div>
   <div class="page-footer__social">

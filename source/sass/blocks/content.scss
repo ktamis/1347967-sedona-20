@@ -1,0 +1,11 @@
+.content {
+  margin: 32px 0;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 65px 60px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 101px 0 80px 0;
+  }
+}
