@@ -7,8 +7,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .form__position {
+.form__position {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -48,8 +48,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .form__end {
+.form__end {
+  @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,53 +69,76 @@
 }
 
 .form__position--three {
-  width: 50%;
+
   order: 1;
 }
 
-@media (min-width: $desktop-width) {
-  .form__position--two {
-    .user-form__list {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .form__position--two {
-    .user-form__item input {
-      width: 100%;
-    }
-
-    .user-form__title {
+.form__position--two {
+  .user-form__title {
+    @media (min-width: $tablet-width) {
       padding: 18px 0;
     }
+  }
+}
 
-    .user-form__item {
+.form__position--two {
+  .user-form__item {
+    @media (min-width: $tablet-width) {
       padding: 0 0 20px;
-    }
-
-    .user-form__item label {
-      padding: 0 0 12px 20px;
     }
   }
 }
 
-@media (min-width: $tablet-width) {
-  .form__position--four {
-    .user-form__list {
+.form__position--two {
+  .user-form__item label {
+    @media (min-width: $tablet-width) {
+      padding: 0 0 12px 20px;
+    }
+    @media (min-width: $desktop-width) {
+      padding: 0 0 12px 0;
+    }
+  }
+}
+
+.form__position--two {
+  .user-form__item input {
+    width: 280px;
+    @media (min-width: $tablet-width) {
+      width: 648px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 316px;
+    }
+  }
+}
+
+.form__position--two {
+  .user-form__list {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+.form__position--four {
+  .user-form__list {
+    @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
       width: 500px;
       margin: 0 auto 35px;
     }
+  }
+}
 
-    .user-form__title {
+.form__position--four {
+  .user-form__title {
+    @media (min-width: $tablet-width) {
       padding: 20px 150px 45px;
     }
   }
-
 }
 
 .form__btn {

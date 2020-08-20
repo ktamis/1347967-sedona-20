@@ -31,12 +31,33 @@ fieldset {
     line-height: 26px;
   }
 }
+/*
+.user-form__icon-tel {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 58px;
+  height: 58px;
+  background-color: #81B3D2;
+  background-image: url("../../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.user-form__icon-mail {
+  width: 58px;
+  height: 58px;
+  background-image: url("../../img/icon-mail.svg");
+  background-repeat: no-repeat;
+}
+*/
 
 .user-form__item {
   padding: 0 20px 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
 .user-form__item label {
