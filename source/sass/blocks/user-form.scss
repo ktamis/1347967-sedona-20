@@ -117,10 +117,22 @@ fieldset {
   width: 48px;
   height: 48px;
   background-color: $primary-color;
-  border: 5px solid $primary-color;
   border-radius: 50%;
 }
+/* нужно прописать условие только для первой лишки
+.user-form__radio:nth (1) input[type="checkbox"] + label::before {
+  position: absolute;
+  top: -17px;
+  left: -80px;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  border-radius: 50%;
 
+}
+
+*/
 .user-form__checkbox input[type="checkbox"] + label::before {
   position: absolute;
   top: -20px;
@@ -128,13 +140,15 @@ fieldset {
   content: "";
   width: 54px;
   height: 54px;
-  background-image: url("../../img/icon-tick.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
   background-size: 50%;
   background-color: $primary-color;
 }
 
+.user-form__checkbox input[type="checkbox"]:checked + label::before {
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 .user-form__emotion {
   min-height: 160px;
   text-align: center;

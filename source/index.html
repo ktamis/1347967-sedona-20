@@ -12,18 +12,35 @@
 
 <body class="page-body">
 <div class="container">
-<header class="page-header">
-  <nav class="mobile-nav mobile-nav--opened">
-    <ul class="mobile-nav__list site-list">
-      <li class="site-list__item"><a href="#" >Главная</a></li>
-      <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
-      <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-      <li class="site-list__item"><a href="#">HTML Academy</a></li>
-    </ul>
-    <button class="mobile-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-  </nav>
+  <header class="page-header">
+    <nav class="mobile-nav mobile-nav--opened">
+
+      <button class="mobile-nav__icon-cross" type="button" title="Иконка закрытия панели навигации">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199"
+             xml:space="preserve" fill="#ffffff">
+          <title>Иконка закрытия панели навигации</title>
+          <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+        </svg>
+      </button>
+
+      <ul class="mobile-nav__list site-list">
+        <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+        <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+        <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+        <li class="site-list__item"><a href="#">HTML Academy</a></li>
+      </ul>
+      <button class="mobile-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982"
+             xml:space="preserve" fill="#81B3D2">
+  <g>
+    <rect width="22.928" height="3.964"/>
+    <rect y="9.009" width="22.928" height="3.964"/>
+    <rect y="18.018" width="22.928" height="3.964"/>
+  </g>
+</svg>
+      </button>
+    </nav>
   <a class="page-header__logo">
     <picture>
       <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
@@ -54,9 +71,9 @@
     </div>
     <div class="reason__picture">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
-        <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
-        <img class="reason__picture--size" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города Седоны, причина №1">
+        <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg">
+        <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg" >
+        <img class="reason__picture--size" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg" width="320" height="260" alt="Фото города Седоны, причина №1">
       </picture>
     </div>
   </section>
@@ -88,12 +105,11 @@
       </div>
       <div class="reason__picture">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
-          <img class="reason__picture--size" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото моста дьявола, причина №2">
+          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg">
+          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg">
+          <img class="reason__picture--size" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg" width="320" height="260" alt="Фото моста дьявола, причина №2">
         </picture>
       </div>
-
     </section>
 
     <section class="reason reason-other bg-grey">
@@ -127,9 +143,9 @@
     </div>
     <div class="search__map">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
-        <img class="search__map--size" src="img/bg-map-mobile@1x.jpg" alt="Карта расположения города Седона в штате Аризона" width="320" height="350">
+        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg">
+        <img class="search__map--size" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg" alt="Карта расположения города Седона в штате Аризона" width="320" height="350">
       </picture>
     </div>
   </section>

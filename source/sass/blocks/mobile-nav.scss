@@ -5,16 +5,47 @@
   background-color: $background;
 
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
+    background-color: $secondary-text-color;
   }
 }
 
+.mobile-nav__icon-cross {
+    @media (min-width: 320px) and (max-width: 768px) {
+    position: absolute;
+    top: 17px;
+    left: 278px;
+    border: none;
+    background-color: $background;
+      &:hover {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      &:active{
+        color: rgba(255, 255, 255, 0.3);
+      }
+  }
+}
 
 .mobile-nav__list {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
+}
+
+.mobile-nav__list::before {
+  position: absolute;
+  content: "";
+  top: 216px;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+  @media (min-width: $tablet-width) {
+   display: none;
+  }
 }
 
 .site-list {
@@ -32,9 +63,10 @@
 }
 
 .site-list__item {
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-
   @media (min-width: 320px) and (max-width: 768px) {
+  position: relative;
+  border-top: 1px solid rgba(1, 1, 1, 0.2);
+
     &:hover {
       color: #669EC0;
     }
@@ -50,6 +82,17 @@
   }
 }
 
+.site-list__item::before {
+  @media (min-width: 320px) and (max-width: 768px) {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
 
 .site-list li {
   @media (min-width: $tablet-width) {
@@ -123,9 +166,9 @@
   height: 22px;
   margin: 0;
   padding: 0;
-  background-image: url("../../img/icon-menu.svg");
   cursor: pointer;
   border: none;
+  background-color: #FFFFFF;
 
   @media (min-width: $tablet-width) {
     display: none;

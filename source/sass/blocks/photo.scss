@@ -85,6 +85,7 @@
   margin: 0;
   line-height: 24px;
   text-transform: none;
+  color: #333333;
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
@@ -108,23 +109,22 @@
 }
 
 .photo__icon {
-  position: relative;
-}
-
-.photo__icon::before {
   position: absolute;
   top: 70px;
-  content: "";
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
   width: 23px;
   height: 21px;
-  background-image: url("../../img/icon-like.svg");
+  fill: rgba(0, 0, 0, 0.3);
+  border: none;
+  background-color: #FFFFFF;
 
   @media (min-width: $tablet-width) {
     top: 28px;
     right: 62px;
+    background-color: $primary-color;
+  }
+  @media (min-width: $desktop-width) {
+    fill: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 
