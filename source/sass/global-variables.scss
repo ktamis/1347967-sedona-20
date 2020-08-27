@@ -14,6 +14,7 @@ $visible: none;
 $mobile-width-only: 320px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+
 // Mixin
 @mixin font-style() {
   line-height: 26px;
@@ -23,10 +24,6 @@ $desktop-width: 1200px;
 @mixin label-style() {
   background-color: $primary-color;
   border: none;
-}
-
-@mixin padding($padding...) {
-  padding: $padding;
 }
 
 @mixin placeholder() {
@@ -63,8 +60,4 @@ img {
   }
 }
 
-@media (min-width: $tablet-width) {
-  .mobile-nav__icon-cross {
-    display: none;
-  }
-}
+

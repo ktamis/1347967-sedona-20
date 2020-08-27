@@ -71,6 +71,12 @@
   }
 }
 
+.bg-color {
+  @media (min-width: 768px) and (max-width: 1200px) {
+        background-color: #EAEAEA;
+  }
+}
+
 .photo__title {
   font-size: $primary-font-size;
   line-height: 24px;

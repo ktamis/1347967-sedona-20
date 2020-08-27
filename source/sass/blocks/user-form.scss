@@ -20,7 +20,6 @@ fieldset {
 
 .user-form__title {
   padding: 20px 0;
-  margin: 0 auto;
   text-align: center;
   font-size: $secondary-font-size;
   @include font-style();
@@ -57,7 +56,6 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 .user-form__item label {
@@ -66,29 +64,35 @@ fieldset {
 }
 
 .user-form__item input {
-  height: 58px;
+  height: 56px;
   @include label-style();
-
-  /*
+/*
     &:nth-child(1) {
     width: 230px;
+    padding-left: 70px;
   }
     &:nth-child(2) {
     width: 192px;
   }
     &:nth-child(3) {
     width: 194px;
-  }*/
-
+  }
+*/
 }
 
 .user-form__item input::placeholder {
+  font-size: 18px;
+  @include font-style();
   padding-left: 22px;
   @include placeholder();
 }
 
 .user-form__radio {
   padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0;
+  }
 }
 
 .user-form__checkbox {
@@ -102,6 +106,10 @@ fieldset {
   @include font-style();
   text-transform: none;
   margin-left: 98px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 75px;
+  }
 }
 
 .user-form__radio input[type="checkbox"],
@@ -116,8 +124,13 @@ fieldset {
   content: "";
   width: 48px;
   height: 48px;
+  border: 5px solid #F2F2F2;
   background-color: $primary-color;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -77px;
+  }
 }
 /* нужно прописать условие только для первой лишки
 .user-form__radio:nth (1) input[type="checkbox"] + label::before {

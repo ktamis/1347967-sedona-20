@@ -11,6 +11,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -58,25 +59,30 @@
 }
 
 .form__position--one {
-  order: 2;
-  border-left: 1px solid #E5E5E5;
-  margin-bottom: 35px;
+  @media (min-width: $tablet-width) {
+    order: 2;
+    border-left: 1px solid #E5E5E5;
+  }
 }
 
 .form__position--two {
-  width: 100%;
-  order: 3;
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    order: 3;
+  }
 }
 
 .form__position--three {
-
-  order: 1;
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .form__position--two {
   .user-form__title {
     @media (min-width: $tablet-width) {
       padding: 18px 0;
+      text-align: center;
     }
   }
 }
