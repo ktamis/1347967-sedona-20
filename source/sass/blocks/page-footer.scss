@@ -14,7 +14,7 @@
 }
 
 .page-footer__contacts {
-  padding: 16px 0;
+  padding: 15px 0;
   font-size: $primary-line-height;
   line-height: 26px;
   font-weight: bold;
@@ -49,12 +49,6 @@
 .page-footer__social-button:active {
   background-color: #5496bd;
 }
-.page-footer__social-button path {
-  fill: #ffffff;
-}
-.page-footer__social-button:active path {
-  fill: rgba(255, 255, 255, 0.3);
-}
 
 .page-footer__copyright {
   display: flex;
@@ -62,14 +56,24 @@
 }
 
 .page-footer__copyright p {
-  padding: 25px 0;
+  padding: 31px 0;
   margin-right: 10px;
   line-height: 26px;
 }
 
-.page-footer__logo path:hover {
+.page-footer__logo {
+  &:hover {
     fill: #81b3d2;
   }
-.page-footer__logo:active path, .page-footer__logo:focus path {
+  &:active,
+  &:focus {
     fill: #bdbbbc;
   }
+}
+
+.social-button--style {
+  fill: #ffffff;
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}

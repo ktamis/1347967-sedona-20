@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма | HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext">
 </head>
 
 <body class="page-body">
@@ -21,10 +19,10 @@
         </svg>
     </button>
     <ul class="mobile-nav__list site-list">
-      <li class="site-list__item site-list__icon"><a href="#">Главная</a></li>
-      <li class="site-list__item"><a href="#">Фото и видео</a></li>
-      <li class="site-list__item"><a href="#">Форма отзыва</a></li>
-      <li class="site-list__item"><a href="#">HTML Academy</a></li>
+      <li class="mobile-nav__item"><a href="#">Главная</a></li>
+      <li class="mobile-nav__item"><a href="#">Фото и видео</a></li>
+      <li class="mobile-nav__item"><a href="#">Форма отзыва</a></li>
+      <li class="mobile-nav__item"><a href="#">HTML Academy</a></li>
     </ul>
     <button class="mobile-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
@@ -65,18 +63,18 @@
     </div>
 <div class="form__position">
     <section class="user-form form__position--one">
-      <fieldset>
+      <fieldset class="user-form__wrapper1">
         <legend class="user-form__title">Представьтесь:</legend>
         <ul class="user-form__list">
-          <li class="user-form__item">
+          <li class="user-form__item user-form__item--style">
             <label for="name1">Имя*:</label>
-            <input id="name1" type="text" name="name1" placeholder="Петр">
+            <input id="name1" type="text" name="name1" placeholder="Петр *">
           </li>
-          <li class="user-form__item">
+          <li class="user-form__item user-form__item--style">
             <label for="name2">Фамилия*:</label>
-            <input id="name2" type="text" name="name2" placeholder="Иванов">
+            <input id="name2" type="text" name="name2" placeholder="Иванов *">
           </li>
-          <li class="user-form__item">
+          <li class="user-form__item user-form__item--style">
             <label for="name3">Отчество:</label>
             <input id="name3" type="text" name="name3" placeholder="Александрович">
           </li>
@@ -85,24 +83,24 @@
     </section>
 
     <section class="user-form form__position--two">
-      <fieldset>
+      <fieldset class="user-form__wrapper2">
         <legend class="user-form__title">Контактная информация:</legend>
         <ul class="user-form__list">
         <li class="user-form__item user-form__icon-tel">
-          <label for="tel">
+          <label class="user-form__item--contact" for="tel">
             <span class="desktop-hidden">Контактный</span> телефон*:</label>
-          <input id="tel" type="text" name="tel" placeholder="Введите телефон">
+          <input id="tel" type="tel" name="tel" placeholder="Введите телефон">
         </li>
         <li class="user-form__item user-form__icon-mail">
-          <label for="email">Электронная почта*:</label>
-          <input id="email" type="text" name="email" placeholder="Введите e-mail">
+          <label class="user-form__item--contact" for="email">Электронная почта*:</label>
+          <input id="email" type="email" name="email" placeholder="Введите e-mail">
         </li>
         </ul>
       </fieldset>
     </section>
 
     <section class="user-form form__position--three">
-      <fieldset>
+      <fieldset class="user-form__wrapper3">
         <legend class="user-form__title">Ваше общее впечатление:</legend>
         <ul class="user-form__list">
           <li class="user-form__radio">
@@ -123,12 +121,12 @@
 </div>
 
     <section class="user-form form__position--four">
-      <fieldset>
+      <fieldset class="user-form__wrapper4">
         <legend class="user-form__title">Посещенные достопримечательности:</legend>
         <ul class="user-form__list">
           <li class="user-form__checkbox">
             <input id="bridge" type="checkbox" name="attraction" value="bridge" checked>
-            <label for="bridge">Мост дьявола</label>
+            <label for="bridge">Мост Дьявола</label>
           </li>
           <li class="user-form__checkbox">
             <input id="mountain" type="checkbox" name="attraction" value="mountain" checked>
@@ -148,7 +146,7 @@
 
     <section class="user-form">
       <fieldset>
-        <legend class="user-form__title">Опишите свои эмоции:</legend>
+        <legend class="user-form__legend">Опишите свои эмоции:</legend>
         <div class="user-form__emotion">
           <textarea class="user-form__emotion--style" rows="10" cols="45" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>

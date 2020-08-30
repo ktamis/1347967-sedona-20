@@ -37,7 +37,6 @@
   }
 }
 
-
 .cl-black {
   color: $primary-text-color;
 }
@@ -46,7 +45,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 138px 40px 47px 45px;
-    width: 33.3%;
+    width: 33.33%;
     text-align: center;
   }
   @media (min-width: $desktop-width) {

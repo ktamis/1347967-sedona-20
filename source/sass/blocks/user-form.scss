@@ -12,6 +12,25 @@ fieldset {
   }
 }
 
+.user-form__wrapper1 {
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px 55px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0 0 26px 77px;
+  }
+}
+
+.user-form__wrapper2 {
+  margin-bottom: 3px;
+}
+
+.user-form__wrapper3 {
+  margin-bottom: 18px;
+}
+
 .user-form__list {
   margin: 0;
   padding: 0;
@@ -30,11 +49,37 @@ fieldset {
     line-height: 26px;
   }
 }
+
+.user-form__item {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 20px;
+
+  }
+}
+
+.user-form__item--contact {
+  padding: 0 0 12px 20px;
+}
+
+.user-form__item label {
+  line-height: 18px;
+  color: #333333;
+}
+
+.user-form__item input {
+  height: 56px;
+  @include label-style();
+}
 /*
 .user-form__icon-tel {
   position: absolute;
   top: 0;
-  left: 10px;
+  right: 0;
   width: 58px;
   height: 58px;
   background-color: #81B3D2;
@@ -51,44 +96,29 @@ fieldset {
 }
 */
 
-.user-form__item {
-  padding: 0 20px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.user-form__item--style input {
+  flex-grow: 1;
+  &:hover,
+  &:focus {
+    background: #E5E5E5
+  }
+  &:active {
+    background: $secondary-text-color;
+    border: 4px solid #E5E5E5;
+  }
 }
 
-.user-form__item label {
-  line-height: 26px;
-  color: #333333;
-}
-
-.user-form__item input {
-  height: 56px;
-  @include label-style();
-/*
-    &:nth-child(1) {
-    width: 230px;
-    padding-left: 70px;
-  }
-    &:nth-child(2) {
-    width: 192px;
-  }
-    &:nth-child(3) {
-    width: 194px;
-  }
-*/
+.user-form__item--style label {
+  margin-right: 14px;
 }
 
 .user-form__item input::placeholder {
-  font-size: 18px;
-  @include font-style();
   padding-left: 22px;
   @include placeholder();
 }
 
 .user-form__radio {
-  padding: 20px 0;
+  padding: 19px 0 23px 0;
 
   @media (min-width: $tablet-width) {
     padding: 25px 0;
@@ -120,36 +150,46 @@ fieldset {
 .user-form__radio input[type="checkbox"] + label::before {
   position: absolute;
   top: -17px;
-  left: -80px;
+  left: -77px;
   content: "";
-  width: 48px;
-  height: 48px;
-  border: 5px solid #F2F2F2;
+  width: 54px;
+  height: 54px;
   background-color: $primary-color;
   border-radius: 50%;
 
-  @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
     left: -77px;
   }
 }
-/* нужно прописать условие только для первой лишки
-.user-form__radio:nth (1) input[type="checkbox"] + label::before {
-  position: absolute;
-  top: -17px;
-  left: -80px;
-  content: "";
-  width: 18px;
-  height: 18px;
-  background-color: red;
-  border-radius: 50%;
 
+.user-form__radio input[type="checkbox"]:hover + label::before,
+.user-form__checkbox input[type="checkbox"]:hover + label::before {
+  background: #E5E5E5;
 }
 
-*/
+.user-form__radio input[type="checkbox"]:active + label::before,
+.user-form__checkbox input[type="checkbox"]:active + label::before{
+  background: #D5D5D5;
+}
+
+.user-form__radio input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  top: 0;
+  left: -60px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #333333;
+  border-radius: 50%;
+}
+.user-form__radio input[type="checkbox"]:checked:active + label::after {
+  background: rgba(51, 51, 51, 0.3);
+}
+
 .user-form__checkbox input[type="checkbox"] + label::before {
   position: absolute;
-  top: -20px;
-  left: -80px;
+  top: -16px;
+  left: -78px;
   content: "";
   width: 54px;
   height: 54px;
@@ -158,16 +198,31 @@ fieldset {
 }
 
 .user-form__checkbox input[type="checkbox"]:checked + label::before {
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+
+.user-form__legend {
+  padding: 18px 0 15px 0;
+  text-align: center;
+  font-size: $secondary-font-size;
+  @include font-style();
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 0 55px 0;
+    font-size: 21px;
+  }
+}
+
 .user-form__emotion {
   min-height: 160px;
   text-align: center;
 }
 
 .user-form__emotion--style {
+  padding: 0;
   width: 279px;
   min-height: 160px;
   background-color: $primary-color;
@@ -183,6 +238,10 @@ fieldset {
 }
 
 .user-form__emotion--style::placeholder {
-  padding: 20px 0 0 21px;
-  @include placeholder()
+  padding: 12px 0 0 21px;
+  @include placeholder();
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 0 0 21px;
+  }
 }
