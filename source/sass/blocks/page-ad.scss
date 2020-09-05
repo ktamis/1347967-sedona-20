@@ -5,7 +5,7 @@
   align-items: center;
   position: relative;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
-  @include bg-img (right 0 top 365px, center -90px);
+  @include bg-img (right 0 top 363px, center -90px);
   background-color: $background;
 
   @media (min-width: $tablet-width) {
@@ -76,12 +76,12 @@
   @media (min-width: $tablet-width) {
     font-size: $primary-line-height;
     width: 518px;
-    margin: 43px auto 35px;
+    margin: 43px auto 32px;
   }
 
   @media (min-width: $desktop-width) {
     width: 483px;
-    margin: 55px auto 28px;
+    margin: 55px auto 32px;
   }
 }
 

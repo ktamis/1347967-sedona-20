@@ -16,15 +16,15 @@ fieldset {
   margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 30px 55px;
+    margin: 0 0 28px 58px;
   }
   @media (min-width: $desktop-width) {
-    margin: 0 0 26px 77px;
+    margin: 0 0 26px 79px;
   }
 }
 
 .user-form__wrapper2 {
-  margin-bottom: 3px;
+  margin-bottom: 16px;
 }
 
 .user-form__wrapper3 {
@@ -58,43 +58,76 @@ fieldset {
 
   @media (min-width: $tablet-width) {
     padding: 0 0 20px;
-
   }
 }
 
 .user-form__item--contact {
-  padding: 0 0 12px 20px;
+  padding: 0 0 10px 20px;
+
 }
 
 .user-form__item label {
-  line-height: 18px;
+  line-height: 26px;
   color: #333333;
 }
 
 .user-form__item input {
-  height: 56px;
+  height: 58px;
   @include label-style();
 }
-/*
+
 .user-form__icon-tel {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 58px;
-  height: 58px;
-  background-color: #81B3D2;
-  background-image: url("../../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
-.user-form__icon-mail {
+.user-form__icon-tel label {
+  position: relative;
+}
+
+.user-form__icon-tel label::before {
+  position: absolute;
+  content: " ";
+  top: 36px;
+  right: -100px;
   width: 58px;
   height: 58px;
-  background-image: url("../../img/icon-mail.svg");
+  background-color: #E6E6E6;
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width: $tablet-width) {
+    right: -465px;
+  }
+  @media (min-width: $desktop-width) {
+    top: -3px;
+    right: -330px;
+  }
 }
-*/
+
+.user-form__icon-tel label::after {
+  position: absolute;
+  content: " ";
+  top: 140px;
+  right: -100px;
+  width: 58px;
+  height: 58px;
+  background-color: #E6E6E6;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width: $tablet-width) {
+    top: 149px;
+    right: -465px;
+  }
+  @media (min-width: $desktop-width) {
+    top: -3px;
+    right: -890px;
+  }
+}
 
 .user-form__item--style input {
   flex-grow: 1;
@@ -113,7 +146,7 @@ fieldset {
 }
 
 .user-form__item input::placeholder {
-  padding-left: 22px;
+  padding: 18px 0 0 21px;
   @include placeholder();
 }
 
@@ -121,13 +154,19 @@ fieldset {
   padding: 19px 0 23px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 0;
+    padding: 25px 0 27px;
   }
 }
 
 .user-form__checkbox {
-  width: 50%;
   padding: 15px 0 40px;
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding: 15px 0 46px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 }
 
 .user-form__radio label,
@@ -140,6 +179,9 @@ fieldset {
 
   @media (min-width: $tablet-width) {
     margin-left: 75px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 78px;
   }
 }
 
@@ -159,7 +201,7 @@ fieldset {
   border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-    left: -77px;
+    left: -73px;
   }
 }
 
@@ -176,7 +218,7 @@ fieldset {
 .user-form__radio input[type="checkbox"]:checked + label::after {
   position: absolute;
   top: 0;
-  left: -60px;
+  left: -57px;
   content: "";
   width: 20px;
   height: 20px;
@@ -206,21 +248,48 @@ fieldset {
 
 
 .user-form__legend {
+  margin: 0 0;
   padding: 18px 0 15px 0;
   text-align: center;
   font-size: $secondary-font-size;
   @include font-style();
 
   @media (min-width: $tablet-width) {
-    padding: 15px 0 55px 0;
+    padding: 15px 100px 55px;
     font-size: 21px;
   }
+  @media (min-width: $desktop-width) {
+    padding: 17px 100px 55px;
+  }
+}
+.user-form__legend::before,
+.user-form__legend::after {
+  @media (min-width: $tablet-width) {
+    width: 47%;
+    @include line();
+  }
+
+}
+.user-form__legend::before {
+@media (min-width: $tablet-width) {
+  right: 80px;
+  margin-top: -8px;
+  margin-left: -50%;
+}
+}
+.user-form__legend::after {
+@media (min-width: $tablet-width) {
+  left: 80px;
+  margin-top: -8px;
+  margin-right: -50%;
+}
 }
 
 .user-form__emotion {
   min-height: 160px;
   text-align: center;
 }
+
 
 .user-form__emotion--style {
   padding: 0;

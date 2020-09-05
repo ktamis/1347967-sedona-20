@@ -49,6 +49,15 @@ $desktop-width: 1200px;
   left: $left;
 }
 
+@mixin line () {
+  position: relative;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 1px;
+  background-color: #DBDBDB;
+}
+
 
 //Global style
 .visually-hidden {
@@ -69,6 +78,11 @@ img {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .tablet-hidden {
+    display: none;
+  }
+}
 @media (min-width: $desktop-width) {
   .desktop-hidden {
     display: none;

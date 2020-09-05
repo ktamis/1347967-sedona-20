@@ -9,12 +9,12 @@
 }
 
 .video__ad {
-  padding: 30px;
+  padding: 32px 30px 35px;
   @media (min-width: $tablet-width) {
-    padding: 60px 100px;
+    padding: 57px 100px 47px;
   }
   @media (min-width: $desktop-width) {
-    padding: 60px 370px 40px;
+    padding: 60px 370px 42px;
   }
 }
 
@@ -45,10 +45,13 @@
 }
 
 .video__slogan {
-  margin: 25px 0 0;
+  margin: 27px 0 0;
   text-align: center;
   line-height: 24px;
 
+  @media (min-width: $tablet-width) {
+    margin: 33px 0;
+  }
   @media (min-width: $desktop-width) {
     margin: 35px 0;
   }
@@ -112,23 +115,22 @@
   }
   @media (min-width: $desktop-width) {
     width: 540px;
-
   }
  }
 
 .video__control::before {
   position: absolute;
-  top: 17px;
-  left: 56px;
+  top: 19px;
+  left: 58px;
   content: "";
-  width: 13px;
-  height: 13px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background-color: #FFFFFF;
 
   @media (min-width: $tablet-width) {
     top: 40px;
-    left: 204px;
+    left: 206px;
   }
 }
 
@@ -145,37 +147,38 @@
 .tools__button-replay {
   position: absolute;
   top: 67px;
-  left: 25px;
+  left: 17px;
 
   @media (min-width: $tablet-width) {
     top: 35px;
-    left: 35px;
+    left: 29px;
   }
+
 }
 
 .tools__button-subtitles{
   position: absolute;
   top: 68px;
-  left: 174px;
+  left: 168px;
   @media (min-width: $tablet-width) {
     top: 35px;
-    left: 524px;
+    left: 519px;
   }
   @media (min-width: $desktop-width) {
-    left: 675px;
+    left: 670px;
   }
 }
 
 .tools__button-fullscreen {
   position: absolute;
   top: 68px;
-  left: 237px;
+  left: 230px;
   @media (min-width: $tablet-width) {
     top: 36px;
-    left: 587px;
+    left: 580px;
   }
   @media (min-width: $desktop-width) {
-    left: 752px;
+    left: 730px;
   }
 }
 

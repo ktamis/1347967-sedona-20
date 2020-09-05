@@ -22,6 +22,17 @@
     @include font-style();
   }
 }
+.reason-services__wrapper {
+
+  @media (min-width: $tablet-width) {
+    padding: 138px 40px 47px 45px;
+    width: 32.9%;
+    text-align: center;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 140px 55px 47px 55px;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .reason-services__wrapper--one {
@@ -30,9 +41,11 @@
 
   .reason-services__wrapper--two {
     order: 3;
+    padding: 138px 30px 47px;
   }
 
   .reason-services__wrapper--three {
+    padding: 138px 50px 47px;
     order: 2;
   }
 }
@@ -41,17 +54,7 @@
   color: $primary-text-color;
 }
 
-.reason-services__wrapper {
 
-  @media (min-width: $tablet-width) {
-    padding: 138px 40px 47px 45px;
-    width: 33.33%;
-    text-align: center;
-  }
-  @media (min-width: $desktop-width) {
-    padding: 140px 55px 47px 55px;
-  }
-}
 
 .reason-services__icon {
   position: relative;

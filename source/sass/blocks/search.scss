@@ -5,9 +5,15 @@
 .search__content {
   text-align: center;
   margin: 0 auto;
-  padding-top: 33px;
-  padding-bottom: 49px;
+  padding: 33px 0 49px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 0 60px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 55px 0 65px;
+  }
 }
 .search__question {
   max-width: 261px;
@@ -19,9 +25,12 @@
   margin: 0 auto 23px;
 
   @media (min-width: $tablet-width) {
-    max-width: 435px;
+    max-width: 425px;
     font-size: 30px;
-    line-height: 26px;
+    margin: 0 auto 35px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 33px;
   }
 }
 .search__choice {
@@ -35,7 +44,11 @@
   color: #333333;
 
   @media (min-width: $tablet-width) {
-    max-width: 435px;
+    max-width: 450px;
+    margin-bottom: 38px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
   }
 }
 
@@ -71,6 +84,7 @@
 .search__button--filter {
   display: block;
   width: 280px;
+  height: 58px;
   padding: 14.5px 32px;
   margin: 0 auto;
 

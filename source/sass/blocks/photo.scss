@@ -1,7 +1,7 @@
 .photo {
   display: flex;
   flex-direction: column;
-  padding: 18px 20px;
+  padding: 22px 20px 15px;
   border-top: 1px solid #E5E5E5;
 
   @media (min-width: $tablet-width) {
@@ -60,10 +60,10 @@
 
 .photo__caption {
   position: relative;
-  padding-top: 11px;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 16px;
+    padding: 15px 15px 17px 21px;
     background-color: #f2f2f2;
   }
   @media (min-width: $desktop-width) {
@@ -99,24 +99,36 @@
 }
 
 .photo__number {
-  margin-left: 37px;
-  margin-bottom: 0;
+  padding: 15px 0 0 37px;
+  margin: 0;
   line-height: 24px;
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 13px;
+    left: 235px;
   }
   @media (min-width: $desktop-width) {
+    left: 312px;
     color: #ffffff;
+  }
+}
+
+.photo__number--big {
+  @media (min-width: $tablet-width) {
+    top: 15px;
+    left: 560px;
+  }
+  @media (min-width: $desktop-width) {
+    left: 1110px;
   }
 }
 
 .photo__icon {
   position: absolute;
   top: 70px;
+  right: 262px;
   width: 23px;
   height: 21px;
   fill: rgba(0, 0, 0, 0.3);
@@ -125,8 +137,18 @@
 
   @media (min-width: $tablet-width) {
     top: 28px;
-    right: 62px;
+    right: 68px;
     background-color: $primary-color;
+  }
+  @media (min-width: $desktop-width) {
+    fill: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.photo__icon--dark {
+  @media (min-width: $tablet-width) {
+    background-color: #EAEAEA
   }
   @media (min-width: $desktop-width) {
     fill: #FFFFFF;
@@ -144,7 +166,7 @@
     top: 187px;
     width: 100%;
   }
-  .photo_big--position {
+  .photo__big--position {
     position: absolute;
     left: 0;
     top: 320px;

@@ -44,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     width: 33.33%;
-    padding: 36px 32px;
+    padding: 38px 20px 25px;
     border-bottom: none;
     background-image: none;
   }
@@ -60,8 +60,11 @@
 
   @media (min-width: $tablet-width) {
     width: 33.3%;
-    padding: 38px 50px;
+    padding: 42px 50px 28px;
     border-bottom: none;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 50px 85px 20px;
   }
 }
 
@@ -70,6 +73,7 @@
     order: 2;
   }
 }
+
 
 .reason__title {
   font-size: $secondary-font-size;
@@ -83,31 +87,31 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 5px 40px;
+    padding: 0 40px;
   }
 }
 
 .reason__number {
   text-align: center;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .reason-other__wrapper--dark {
   padding: 26px 35px 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 42px 30px;
+    padding: 42px 39px 28px;
   }
   @media (min-width: $desktop-width) {
-    padding: 40px 40px;
+    padding: 42px 58px 49px;
   }
 }
 
 .reason-other__wrapper--dark .reason__title {
   @media (min-width: $tablet-width) {
     margin: 0 30px;
-  }
-  @media (min-width: $desktop-width) {
-    margin: 0 60px;
   }
 }
 
