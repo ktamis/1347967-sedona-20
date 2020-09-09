@@ -66,3 +66,15 @@
     }
   }
 }
+
+.site-list--active a {
+  @media (min-width: $tablet-width) {
+    color: #766357;
+    &:hover {
+      color: #604E43;
+    }
+    &:active {
+      color:  #766357;
+    }
+  }
+}

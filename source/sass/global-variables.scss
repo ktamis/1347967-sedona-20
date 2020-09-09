@@ -30,7 +30,7 @@ $desktop-width: 1200px;
   font-family: $primary-font;
   font-style: normal;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: bold;
   text-transform: none;
   color: #000000;
@@ -62,6 +62,19 @@ $desktop-width: 1200px;
 //Global style
 .visually-hidden {
   display: $visible;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+h3{
+  margin: 0;
+}
+input {
+  padding: 0;
 }
 
 a {

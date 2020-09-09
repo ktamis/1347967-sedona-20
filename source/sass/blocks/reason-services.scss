@@ -1,4 +1,3 @@
-
 .reason-services {
   display: flex;
   flex-wrap: wrap;
@@ -22,8 +21,9 @@
     @include font-style();
   }
 }
-.reason-services__wrapper {
 
+.reason-services__wrapper {
+  box-sizing: border-box;
   @media (min-width: $tablet-width) {
     padding: 138px 40px 47px 45px;
     width: 32.9%;
@@ -54,18 +54,15 @@
   color: $primary-text-color;
 }
 
-
-
 .reason-services__icon {
   position: relative;
-}
-
-.reason-services__icon::before {
-  position: absolute;
-  content: "";
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
 }
 
 .reason-services__icon--housing::before {
@@ -73,7 +70,7 @@
   left: -50px;
   width: 39px;
   height: 36.83px;
-  background-image: url("../img/icon-house.svg");
+  background-image: url("../img/sprite.svg#icon-house");
 
   @media (min-width: $tablet-width) {
     top: 60px;
@@ -94,7 +91,7 @@
   height: 34.9px;
   margin-left: 25px;
   margin-top: 3px;
-  background-image: url("../img/icon-gift.svg");
+  background-image: url("../img/sprite.svg#icon-gift");
 
   @media (min-width: $tablet-width) {
     top: 57px;
@@ -114,7 +111,7 @@
   width: 32px;
   height: 38px;
   margin-left: 18px;
-  background-image: url("../img/icon-burger.svg");
+  background-image: url("../img/sprite.svg#icon-burger");
 
   @media (min-width: $tablet-width) {
     top: 60px;

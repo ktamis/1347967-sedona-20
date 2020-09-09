@@ -61,25 +61,22 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-
-}
-
-.search__button:hover, .search__button:focus {
-  background-color: #669EC0;
-}
-.search__button:active {
-  background-color: #5496BD;
-  color: rgba(255, 255, 255, 0.3);
-}
-.search__button:disabled {
-  background: #E5E5E5;
+  &:hover, &:focus {
+    background-color: #669EC0;
+  }
+  &:active {
+    background-color: #5496BD;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:disabled {
+    background: #E5E5E5;
+  }
 }
 
 .search__button--colorname {
   background-color: $background;
   border: none;
 }
-
 
 .search__button--filter {
   display: block;
@@ -118,5 +115,3 @@
     height: 350px;
   }
 }
-
-
