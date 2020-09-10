@@ -87,7 +87,7 @@
   width: 58px;
   height: 58px;
   background-color: #E6E6E6;
-  background-image: url("../img/sprite.svg#icon-phone");
+  background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
   background-position: center center;
 
@@ -108,7 +108,7 @@
   width: 58px;
   height: 58px;
   background-color: #E6E6E6;
-  background-image: url("../img/sprite.svg#icon-mail");
+  background-image: url("../img/mail.svg");
   background-repeat: no-repeat;
   background-position: center center;
 
@@ -237,7 +237,7 @@
 }
 
 .user-form__checkbox input[type="checkbox"]:checked + label::before {
-  background-image: url("../img/sprite.svg#icon-tick");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }

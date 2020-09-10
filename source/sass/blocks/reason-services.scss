@@ -26,7 +26,7 @@
   box-sizing: border-box;
   @media (min-width: $tablet-width) {
     padding: 138px 40px 47px 45px;
-    width: 32.9%;
+    width: 33.34%;
     text-align: center;
   }
   @media (min-width: $desktop-width) {
@@ -56,21 +56,15 @@
 
 .reason-services__icon {
   position: relative;
-  &::before {
-    position: absolute;
-    content: "";
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
   }
-}
 
-.reason-services__icon--housing::before {
+.reason-services__icon--housing {
+  position: absolute;
   top: 10px;
   left: -50px;
   width: 39px;
   height: 36.83px;
-  background-image: url("../img/sprite.svg#icon-house");
+  fill: $background;
 
   @media (min-width: $tablet-width) {
     top: 60px;
@@ -84,14 +78,15 @@
   }
 }
 
-.reason-services__icon--souvenir::before {
+.reason-services__icon--souvenir {
+  position: absolute;
   top: 3px;
   left: -75px;
   width: 40px;
   height: 34.9px;
   margin-left: 25px;
   margin-top: 3px;
-  background-image: url("../img/sprite.svg#icon-gift");
+  fill: $background;
 
   @media (min-width: $tablet-width) {
     top: 57px;
@@ -105,13 +100,14 @@
   }
 }
 
-.reason-services__icon--food::before {
+.reason-services__icon--food {
+  position: absolute;
   top: 5px;
   left: -67px;
   width: 32px;
   height: 38px;
   margin-left: 18px;
-  background-image: url("../img/sprite.svg#icon-burger");
+  fill: $background;
 
   @media (min-width: $tablet-width) {
     top: 60px;
