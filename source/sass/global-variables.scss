@@ -1,5 +1,5 @@
 // Color
-$background: #81B3D2;
+$background: #81b3d2;
 $primary-color: #f2f2f2;
 $primary-text-color: #000000;
 $secondary-text-color: #ffffff;
@@ -55,7 +55,7 @@ $desktop-width: 1200px;
   display: inline-block;
   vertical-align: middle;
   height: 1px;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
 }
 
 
@@ -70,9 +70,10 @@ fieldset {
   border: none;
 }
 
-h3{
+h3 {
   margin: 0;
 }
+
 input {
   padding: 0;
 }
@@ -96,10 +97,9 @@ img {
     display: none;
   }
 }
+
 @media (min-width: $desktop-width) {
   .desktop-hidden {
     display: none;
   }
 }
-
-

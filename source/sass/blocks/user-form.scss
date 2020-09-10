@@ -266,7 +266,7 @@
 }
 
 
-.user-form__legend span {
+.user-form__legend .user-form__legend--line {
   @media (min-width: $tablet-width) {
     display: block;
     width: 400px;

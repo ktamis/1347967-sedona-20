@@ -114,11 +114,11 @@
     display: flex;
     flex-direction: row;
   }
- }
+  }
 }
 
-.form__position--four span,
-.form__position--two span {
+.form__position--four .user-form__title--line,
+.form__position--two .user-form__title--line {
   @media (min-width: $tablet-width) {
     display: block;
     width: 400px;

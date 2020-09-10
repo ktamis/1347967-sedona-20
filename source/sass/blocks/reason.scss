@@ -36,6 +36,7 @@
 }
 
 .reason__wrapper {
+  box-sizing: border-box;
   text-align: center;
   padding: 72px 5px 30px 5px;
   background-image: url("../img/bg-triangle.svg");
@@ -54,6 +55,7 @@
 }
 
 .reason-other__wrapper {
+  box-sizing: border-box;
   text-align: center;
   padding: 39px 15px 25px;
   border-bottom: 1px solid #D6D6D6;
