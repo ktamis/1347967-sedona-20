@@ -26,10 +26,11 @@
   box-sizing: border-box;
   @media (min-width: $tablet-width) {
     padding: 138px 40px 47px 45px;
-    width: 33.34%;
+    width: 256px;
     text-align: center;
   }
   @media (min-width: $desktop-width) {
+    width: 400px;
     padding: 140px 55px 47px 55px;
   }
 }
