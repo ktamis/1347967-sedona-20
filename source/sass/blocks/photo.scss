@@ -36,7 +36,7 @@
   }
 }
 
-.photo--size {
+.photo__size {
   @media (min-width: $tablet-width) {
     width: 324px;
     height: 267px;
@@ -47,7 +47,7 @@
   }
 }
 
-.photo_big--size {
+.photo__big {
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 400px;
@@ -160,13 +160,13 @@
   .photo {
     position: relative;
   }
-  .photo--position {
+  .photo__position {
     position: absolute;
     left: 0;
     top: 187px;
     width: 100%;
   }
-  .photo__big--position {
+  .photo__big-position {
     position: absolute;
     left: 0;
     top: 320px;

@@ -1,7 +1,11 @@
 //
 @import "./node_modules/normalize-scss/sass/_normalize.scss";
-@import "global-variables";
+@import "global";
+@import "variables";
+@import "mixin";
+@import "blocks/visually-hidden";
 @import "blocks/fonts";
+
 //
 @import "blocks/container";
 @import "blocks/page-body";

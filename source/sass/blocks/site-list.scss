@@ -67,7 +67,7 @@
   }
 }
 
-.site-list--active a {
+.site-list__active a {
   @media (min-width: $tablet-width) {
     color: #766357;
     &:hover {

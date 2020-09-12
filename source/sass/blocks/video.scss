@@ -143,7 +143,7 @@
   }
 }
 
-.tools__button-replay {
+.video__button-replay {
   position: absolute;
   top: 67px;
   left: 17px;
@@ -154,7 +154,7 @@
   }
 }
 
-.tools__button-subtitles{
+.video__button-subtitles{
   position: absolute;
   top: 68px;
   left: 168px;
@@ -167,7 +167,7 @@
   }
 }
 
-.tools__button-fullscreen {
+.video__button-fullscreen {
   position: absolute;
   top: 68px;
   left: 230px;
@@ -180,7 +180,7 @@
   }
 }
 
-.tools--style {
+.video__tools-style {
   fill: #5C6870;
   border: none;
   background-color: $primary-color;
