@@ -130,9 +130,10 @@
     background: #E5E5E5
   }
 
-  &:active {
-    background: $secondary-text-color;
-    border: 4px solid #E5E5E5;
+  &:focus {
+    background: #ffffff;
+    border: 2px solid #E5E5E5;
+    height: 54px;
   }
 }
 
@@ -180,12 +181,12 @@
   }
 }
 
-.user-form__radio input[type="checkbox"],
+.user-form__radio input[type="radio"],
 .user-form__checkbox input[type="checkbox"] {
   display: none;
 }
 
-.user-form__radio input[type="checkbox"] + label::before {
+.user-form__radio input[type="radio"] + label::before {
   position: absolute;
   top: -17px;
   left: -77px;
@@ -200,17 +201,17 @@
   }
 }
 
-.user-form__radio input[type="checkbox"]:hover + label::before,
+.user-form__radio input[type="radio"]:hover + label::before,
 .user-form__checkbox input[type="checkbox"]:hover + label::before {
   background: #E5E5E5;
 }
 
-.user-form__radio input[type="checkbox"]:active + label::before,
+.user-form__radio input[type="radio"]:active + label::before,
 .user-form__checkbox input[type="checkbox"]:active + label::before {
   background: #D5D5D5;
 }
 
-.user-form__radio input[type="checkbox"]:checked + label::after {
+.user-form__radio input[type="radio"]:checked + label::after {
   position: absolute;
   top: 0;
   left: -57px;
@@ -221,7 +222,7 @@
   border-radius: 50%;
 }
 
-.user-form__radio input[type="checkbox"]:checked:active + label::after {
+.user-form__radio input[type="radio"]:checked:active + label::after {
   background: rgba(51, 51, 51, 0.3);
 }
 
@@ -306,7 +307,7 @@
 }
 
 .user-form__emotion-style {
-  padding: 0;
+  padding: 12px 21px;
   width: 279px;
   min-height: 160px;
   background-color: $primary-color;
@@ -322,7 +323,7 @@
 }
 
 .user-form__emotion-style::placeholder {
-  padding: 12px 0 0 21px;
+  padding: 12px 21px;
   @include placeholder();
 
   @media (min-width: $tablet-width) {

@@ -85,6 +85,12 @@
   }
 }
 
+.form__position-two input:focus {
+  background: #ffffff;
+  border: 2px solid #E5E5E5;
+  height: 54px;
+}
+
 .form__position-three {
   @media (min-width: $tablet-width) {
     width: 50%;
