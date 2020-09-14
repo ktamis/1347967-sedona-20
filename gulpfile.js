@@ -148,11 +148,7 @@ exports.build = build;
 // start
 
 const start = gulp.series(
-  clean,
-  copy,
-  styles,
-  sprite,
-  html,
+  build,
   server,
   watcher
 );

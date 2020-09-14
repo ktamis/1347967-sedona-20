@@ -76,8 +76,14 @@
 }
 
 .user-form__item input {
+  box-sizing: border-box;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 18px;
   height: 58px;
+  font-family: $primary-font;
   @include label-style();
+  border: 2px solid $primary-color;
 }
 
 .user-form__icon-tel {
@@ -154,7 +160,7 @@
 .user-form__item input::placeholder {
   line-height: 50px;
   box-sizing: border-box;
-  padding: 18px 0 14px 20px;
+  padding: 0;
   @include placeholder();
 }
 
@@ -178,8 +184,7 @@
 }
 
 .user-form__radio input,
-.user-form__checkbox input,
-.user-form__item input {
+.user-form__checkbox input, {
   padding: 0;
 }
 
@@ -222,6 +227,13 @@
 .user-form__radio input[type="radio"]:hover + label::before,
 .user-form__checkbox input[type="checkbox"]:hover + label::before {
   background: #E5E5E5;
+}
+
+.user-form__radio input[type="radio"]:focus + label::before,
+.user-form__checkbox input[type="checkbox"]:focus + label::before {
+  background: #ffffff;
+  border: 2px solid #E5E5E5;
+  height: 54px;
 }
 
 .user-form__radio input[type="radio"]:active + label::before,
@@ -325,7 +337,13 @@
 }
 
 .user-form__emotion-style {
-  padding: 0;
+  box-sizing: border-box;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  height: 58px;
+  font-family: $primary-font;
+
   width: 279px;
   min-height: 160px;
   background-color: $primary-color;
@@ -341,10 +359,6 @@
 }
 
 .user-form__emotion-style::placeholder {
-  padding: 12px 21px;
+  padding: 0;
   @include placeholder();
-
-  @media (min-width: $tablet-width) {
-    padding: 17px 0 0 21px;
-  }
 }
