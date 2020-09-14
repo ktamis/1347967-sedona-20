@@ -128,8 +128,30 @@
           </ul>
         </fieldset>
       </section>
+      <!----- modal form one ----->
+      <section class="modal modal--closed">
+        <div class="modal__wrapper">
+          <h3 class="modal__slogan">Что-то пошло не так?</h3>
+          <p class="modal__text">Проверьте поля выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
+        <button class="modal__btn modal__btn-size modal__btn-fixed modal__btn-style" type="submit">ОК
+        </button>
+      </section>
+      <!----- end modal form one ----->
+      <!----- modal form two ----->
+      <section class="modal modal--closed modal-two">
+        <div class="modal-two__wrapper">
+          <h3 class="modal__slogan">Ваш отзыв отправлен!</h3>
+          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="modal__box">
+          <button class="modal__btn modal-two__btn-size modal-two__btn-fixed modal__btn-style" type="submit">Закрыть окно
+          </button>
+        </div>
+      </section>
+      <!----- end modal form two ----->
       <section class="user-form">
-        <fieldset>
+        <fieldset class="user-form__wrapper5">
           <h3 class="user-form__legend"><span class="user-form__legend-line">Опишите свои эмоции:</span></h3>
           <div class="user-form__emotion">
             <textarea class="user-form__emotion-style" id="textarea" rows="10" cols="45" name="text" placeholder="Опишите подробно все свои восторги"></textarea>

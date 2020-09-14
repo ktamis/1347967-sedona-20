@@ -1,0 +1,130 @@
+.modal--closed {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  box-sizing: border-box;
+  width: 320px;
+  height: 280px;
+  top: 35%;
+  left: 50%;
+  z-index: 40;
+  transform: translate(-50%, -50%);
+  font-family: $primary-font;
+  background: $secondary-text-color;
+  box-shadow: -15px 0 #f2f2f2, 15px 0 #f2f2f2, 0 7px 15px -2px rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet-width) {
+    top: 62%;
+    left: 50%;
+    width: 400px;
+    height: 347px;
+    box-shadow: 0 10px 10px 7px rgba(0, 1, 1, 0.15);
+  }
+}
+
+.modal__wrapper {
+  padding: 40px 50px 22px;
+  @media (min-width: $tablet-width) {
+    padding: 35px 50px 27px;
+  }
+}
+
+.modal__slogan {
+  margin: 0;
+  padding: 0 0 30px;
+  text-align: center;
+  font-size: 18px;
+  @include font-style();
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 40px 28px;
+  }
+}
+
+.modal__text {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+.modal__btn {
+  font-family: $primary-font;
+  font-size: 18px;
+  text-transform: uppercase;
+  @include font-style();
+  align-items: center;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.modal__btn-fixed {
+  margin:  0 70px 35px 70px;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    margin:  20px 64px 35px 64px;
+  }
+}
+
+.modal__btn-style {
+  background-color: $background;
+  color: #f2f2f2;
+  border: none;
+}
+
+.modal__btn-size {
+  width: 180px;
+  height: 58px;
+  @media (min-width: $tablet-width) {
+    width: 272px;
+  }
+}
+
+.modal-two {
+  top: 75%;
+  width: 320px;
+  height: 323px;
+  z-index: 30;
+  @media (min-width: $tablet-width) {
+    top: 42%;
+    width: 640px;
+    height: 347px;
+  }
+}
+.modal-two__wrapper {
+  padding: 40px 50px 37px;
+  @media (min-width: $tablet-width) {
+    padding: 50px 50px 45px;
+  }
+}
+
+.modal__box {
+  width: 320px;
+  height: 98px;
+  background: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    height: 146px;
+  }
+}
+
+.modal-two__btn-size {
+  width: 280px;
+  height: 58px;
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
+}
+.modal-two__btn-fixed {
+  margin: 20px;
+  @media (min-width: $tablet-width) {
+    margin: 44px 91px;
+  }
+}

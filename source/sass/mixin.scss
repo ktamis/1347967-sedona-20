@@ -40,3 +40,9 @@
   height: 1px;
   background-color: #dbdbdb;
 }
+
+@mixin fieldset () {
+  padding: 0;
+  margin: 0;
+  border: none;
+}

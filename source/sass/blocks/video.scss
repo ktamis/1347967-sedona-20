@@ -78,6 +78,7 @@
   position: absolute;
   top: 156px;
   right: 20px;
+  @include fieldset ();
   @media (min-width: $tablet-width) {
     top: 407px;
     right: 0;

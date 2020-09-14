@@ -67,7 +67,7 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass//*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("html"));
 }
 
@@ -79,7 +79,7 @@ exports.default = gulp.series(
 
 const copy = () => {
   return gulp.src([
-    "source/fonts//*.{woff,woff2}",
+    "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
     "source/*.ico"
@@ -102,7 +102,7 @@ exports.clean = clean;
 // Images optimization
 
 const images = () => {
-  return gulp.src("source/img//*.{jpg,png,svg}")
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true}),
@@ -115,7 +115,7 @@ exports.images = images;
 // create WebP
 
 const createWebp = () => {
-  return gulp.src("source/img//*.{png,jpg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"))
 }
