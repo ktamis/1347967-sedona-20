@@ -72,6 +72,15 @@
   padding: 0 0 10px 20px;
 }
 
+.user-form__icon-tel input::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+.user-form__icon-mail input::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
 .user-form__item label {
   line-height: 26px;
   color: #333333;
@@ -366,6 +375,8 @@
 }
 
 .user-form__emotion-style::placeholder {
+  color: #000000;
+  opacity: 1;
   padding: 0;
   @include placeholder();
 }
